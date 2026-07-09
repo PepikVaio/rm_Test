@@ -18,33 +18,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install language-tool-python
+          pip install torch transformers sentencepiece
 
-      - name: Test LanguageTool languages
+      - name: Restore diacritics
         run: |
-          python - <<EOF
-          import language_tool_python
+          python tools/diacritics.py
 
-          tool = language_tool_python.LanguageTool()
-
-          print(tool._get_languages())
-          EOF          
-
-      - name: Test LanguageTool
+      - name: Show result
         run: |
-          python - <<EOF
-          import language_tool_python
-
-          tool = language_tool_python.LanguageTool('cs-CZ')
-
-          text = "Dnes jsem sel do prace. Muj plan je dulezity."
-
-          matches = tool.check(text)
-
-          print("Nalezeno oprav:", len(matches))
-
-          for m in matches:
-              print(m.message)
-          EOF
-
-
+          cat README_result.md

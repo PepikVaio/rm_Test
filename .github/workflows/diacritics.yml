@@ -25,7 +25,7 @@ jobs:
           python - <<EOF
           import language_tool_python
 
-          tool = language_tool_python.LanguageTool('cs')
+          tool = language_tool_python.LanguageTool('cs-CZ')
 
           text = "Dnes jsem sel do prace. Muj plan je dulezity."
 

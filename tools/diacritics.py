@@ -1,5 +1,5 @@
 from pathlib import Path
-from transformers import pipeline
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
 input_file = Path("README.md")
 output_file = Path("README_result.md")
@@ -7,18 +7,30 @@ output_file = Path("README_result.md")
 text = input_file.read_text(encoding="utf-8")
 
 print("Načten text:")
-print(text[:200])
+print(text)
 
 print("Načítám model...")
 
-model = pipeline(
-    "text2text-generation",
-    model="Helsinki-NLP/opus-mt-en-cs"
+model_name = "Helsinki-NLP/opus-mt-en-cs"
+
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
+
+inputs = tokenizer(
+    text,
+    return_tensors="pt",
+    truncation=True
 )
 
-result = model(text, max_length=512)
+translated = model.generate(
+    **inputs,
+    max_length=512
+)
 
-output = result[0]["generated_text"]
+output = tokenizer.decode(
+    translated[0],
+    skip_special_tokens=True
+)
 
 output_file.write_text(output, encoding="utf-8")
 

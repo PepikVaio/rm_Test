@@ -1,7 +1,7 @@
 from pathlib import Path
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
-MODEL = "ufal/mt5-small-diacritics"
+MODEL = "imvladikon/word-level-czech-diacritics"
 
 input_file = Path("README.md")
 output_file = Path("README_result.md")

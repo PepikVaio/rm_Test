@@ -18,6 +18,10 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Clone UFAL tool
+        run: |
+          git clone https://github.com/ufal/bert-diacritics-restoration.git tools/ufal
+
       - name: Install dependencies
         run: |
           pip install torch transformers sentencepiece

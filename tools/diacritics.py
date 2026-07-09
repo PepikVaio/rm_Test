@@ -1,39 +1,32 @@
 from pathlib import Path
-from transformers import pipeline
+import subprocess
+import shutil
 
 
 INPUT = Path("README.md")
 OUTPUT = Path("README_result.md")
 
-
-MODEL = "ufal/bert-base-czech-cased"
-
-
-print("Načítám český model...")
+UFAL = Path("tools/ufal")
 
 
-corrector = pipeline(
-    "fill-mask",
-    model=MODEL
-)
+print("Kontrola UFAL nástroje...")
 
 
-text = INPUT.read_text(
-    encoding="utf-8"
-)
+if not UFAL.exists():
+    raise Exception("UFAL nástroj nebyl nalezen")
 
 
-print("Zpracovávám text...")
+print("Spouštím obnovu diakritiky...")
 
 
-# zatím připraveno pro model
-# BERT musí doplňovat maskované znaky,
-# není to klasický překladač
-
-
-OUTPUT.write_text(
-    text,
-    encoding="utf-8"
+subprocess.run(
+    [
+        "python",
+        str(UFAL / "restore.py"),
+        str(INPUT),
+        str(OUTPUT)
+    ],
+    check=True
 )
 
 

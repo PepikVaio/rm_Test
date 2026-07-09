@@ -22,3 +22,9 @@ jobs:
       - name: Show result
         run: |
           cat README_result.md
+
+      - name: Cache Hugging Face models
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: huggingface-models

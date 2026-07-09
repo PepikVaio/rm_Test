@@ -20,6 +20,16 @@ jobs:
         run: |
           pip install language-tool-python
 
+      - name: Test LanguageTool languages
+        run: |
+          python - <<EOF
+          import language_tool_python
+
+          tool = language_tool_python.LanguageTool()
+
+          print(tool._get_languages())
+          EOF          
+
       - name: Test LanguageTool
         run: |
           python - <<EOF
@@ -36,3 +46,5 @@ jobs:
           for m in matches:
               print(m.message)
           EOF
+
+

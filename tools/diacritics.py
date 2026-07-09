@@ -6,15 +6,19 @@ import torch
 INPUT = Path("README.md")
 OUTPUT = Path("README_result.md")
 
-
 MODEL = "google/mt5-small"
 
 
 print("Načítám model...")
 
-tokenizer = AutoTokenizer.from_pretrained(MODEL)
-model = AutoModelForSeq2SeqLM.from_pretrained(MODEL)
+tokenizer = AutoTokenizer.from_pretrained(
+    MODEL,
+    use_fast=False
+)
 
+model = AutoModelForSeq2SeqLM.from_pretrained(
+    MODEL
+)
 
 text = INPUT.read_text(encoding="utf-8")
 

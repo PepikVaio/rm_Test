@@ -20,7 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install torch transformers sentencepiece protobuf
+          pip install torch transformers sentencepiece
 
       - name: Restore diacritics
         run: |

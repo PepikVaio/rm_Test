@@ -1,49 +1,60 @@
-from openai import OpenAI
 from pathlib import Path
-import os
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+import torch
 
-client = OpenAI(
-    api_key=os.environ["OPENAI_API_KEY"]
+
+INPUT = Path("README.md")
+OUTPUT = Path("README_result.md")
+
+
+MODEL = "google/mt5-small"
+
+
+print("Načítám model...")
+
+tokenizer = AutoTokenizer.from_pretrained(MODEL)
+model = AutoModelForSeq2SeqLM.from_pretrained(MODEL)
+
+
+text = INPUT.read_text(encoding="utf-8")
+
+
+prompt = (
+    "Doplň českou diakritiku v tomto textu. "
+    "Neměň význam ani formátování:\n\n"
+    + text
 )
 
-input_file = Path("README.md")
-output_file = Path("README_result.md")
 
-text = input_file.read_text(encoding="utf-8")
+print("Generuji opravu...")
 
-print("Posílám text do ChatGPT...")
 
-response = client.chat.completions.create(
-    model="gpt-4.1-mini",
-    temperature=0,
-    messages=[
-        {
-            "role": "system",
-            "content": """
-Jsi český korektor.
-
-Doplň pouze chybějící českou diakritiku.
-
-Pravidla:
-- neměň význam textu
-- nepřepisuj věty
-- neměň Markdown formátování
-- zachovej nadpisy, odrážky a mezery
-- vrať pouze opravený text
-"""
-        },
-        {
-            "role": "user",
-            "content": text
-        }
-    ]
+inputs = tokenizer(
+    prompt,
+    return_tensors="pt",
+    truncation=True,
+    max_length=512
 )
 
-result = response.choices[0].message.content
 
-output_file.write_text(
+with torch.no_grad():
+    output = model.generate(
+        **inputs,
+        max_length=512,
+        num_beams=4
+    )
+
+
+result = tokenizer.decode(
+    output[0],
+    skip_special_tokens=True
+)
+
+
+OUTPUT.write_text(
     result,
     encoding="utf-8"
 )
+
 
 print("Hotovo")

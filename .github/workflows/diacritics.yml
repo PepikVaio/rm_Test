@@ -20,16 +20,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install openai
+          pip install torch transformers sentencepiece
 
       - name: Restore diacritics
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           python tools/diacritics.py
 
       - name: Show result
         run: |
           cat README_result.md
-
-

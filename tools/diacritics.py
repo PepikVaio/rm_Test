@@ -1,37 +1,30 @@
 from pathlib import Path
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
+MODEL = "SEM_DAME_CESKY_MODEL"
+
 input_file = Path("README.md")
 output_file = Path("README_result.md")
 
 text = input_file.read_text(encoding="utf-8")
 
-print("Načten text:")
-print(text)
+tokenizer = AutoTokenizer.from_pretrained(MODEL)
+model = AutoModelForSeq2SeqLM.from_pretrained(MODEL)
 
-print("Načítám model...")
-
-model_name = "Helsinki-NLP/opus-mt-en-cs"
-
-tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
-
-inputs = tokenizer(
+tokens = tokenizer(
     text,
     return_tensors="pt",
     truncation=True
 )
 
-translated = model.generate(
-    **inputs,
-    max_length=512
+result = model.generate(
+    **tokens,
+    max_length=1024
 )
 
 output = tokenizer.decode(
-    translated[0],
+    result[0],
     skip_special_tokens=True
 )
 
 output_file.write_text(output, encoding="utf-8")
-
-print("Hotovo")

@@ -6,6 +6,7 @@ import torch
 INPUT = Path("README.md")
 OUTPUT = Path("README_result.md")
 
+
 MODEL = "google/mt5-small"
 
 
@@ -13,24 +14,36 @@ print("Načítám model...")
 
 tokenizer = AutoTokenizer.from_pretrained(
     MODEL,
-    use_fast=False
+    use_fast=False,
+    legacy=True
 )
 
 model = AutoModelForSeq2SeqLM.from_pretrained(
     MODEL
 )
 
-text = INPUT.read_text(encoding="utf-8")
 
-
-prompt = (
-    "Doplň českou diakritiku v tomto textu. "
-    "Neměň význam ani formátování:\n\n"
-    + text
+text = INPUT.read_text(
+    encoding="utf-8"
 )
 
 
-print("Generuji opravu...")
+print("Zpracovávám text...")
+
+
+prompt = f"""
+Doplň českou diakritiku v tomto textu.
+
+Pravidla:
+- zachovej význam
+- neměň věty
+- zachovej Markdown formátování
+- vrať pouze opravený text
+
+Text:
+
+{text}
+"""
 
 
 inputs = tokenizer(
@@ -42,6 +55,7 @@ inputs = tokenizer(
 
 
 with torch.no_grad():
+
     output = model.generate(
         **inputs,
         max_length=512,

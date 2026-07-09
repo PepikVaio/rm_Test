@@ -1,37 +1,49 @@
+from openai import OpenAI
 from pathlib import Path
-from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+import os
 
-MODEL = "imvladikon/word-level-czech-diacritics"
+client = OpenAI(
+    api_key=os.environ["OPENAI_API_KEY"]
+)
 
 input_file = Path("README.md")
 output_file = Path("README_result.md")
 
 text = input_file.read_text(encoding="utf-8")
 
-print("Načítám model...")
+print("Posílám text do ChatGPT...")
 
-tokenizer = AutoTokenizer.from_pretrained(MODEL)
-model = AutoModelForSeq2SeqLM.from_pretrained(MODEL)
+response = client.chat.completions.create(
+    model="gpt-4.1-mini",
+    temperature=0,
+    messages=[
+        {
+            "role": "system",
+            "content": """
+Jsi český korektor.
 
-print("Zpracovávám text...")
+Doplň pouze chybějící českou diakritiku.
 
-tokens = tokenizer(
-    text,
-    return_tensors="pt",
-    truncation=True,
-    max_length=512
+Pravidla:
+- neměň význam textu
+- nepřepisuj věty
+- neměň Markdown formátování
+- zachovej nadpisy, odrážky a mezery
+- vrať pouze opravený text
+"""
+        },
+        {
+            "role": "user",
+            "content": text
+        }
+    ]
 )
 
-result = model.generate(
-    **tokens,
-    max_length=512
-)
+result = response.choices[0].message.content
 
-output = tokenizer.decode(
-    result[0],
-    skip_special_tokens=True
+output_file.write_text(
+    result,
+    encoding="utf-8"
 )
-
-output_file.write_text(output, encoding="utf-8")
 
 print("Hotovo")

@@ -1,0 +1,38 @@
+name: Restore Czech diacritics
+
+on:
+  workflow_dispatch:
+
+jobs:
+  diacritics:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install language-tool-python
+
+      - name: Test LanguageTool
+        run: |
+          python - <<EOF
+          import language_tool_python
+
+          tool = language_tool_python.LanguageTool('cs')
+
+          text = "Dnes jsem sel do prace. Muj plan je dulezity."
+
+          matches = tool.check(text)
+
+          print("Nalezeno oprav:", len(matches))
+
+          for m in matches:
+              print(m.message)
+          EOF

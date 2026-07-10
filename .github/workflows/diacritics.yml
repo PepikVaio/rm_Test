@@ -23,7 +23,7 @@ permissions:
 
 jobs:
   main:
-    name: 'Update the public-facing repo'
+    name: 'Adding diacritics to an *md file'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

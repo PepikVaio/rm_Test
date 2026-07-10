@@ -13,38 +13,38 @@
 - testováno - reMarkable 2
 - testováno - reMarkable Paper Pro
 
-> [!TIP]0
+<br>
 
 ## Instalace
-Soubory > [!NOTE]7, > [!NOTE]8 a > [!NOTE]9 (pokud jsou k dispozici) zkopírujte do [![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/PepikVaio/reMarkable_Xovi_Extensions)0.
+Soubory `.qmd`, `.rcc` a `.json` (pokud jsou k dispozici) zkopírujte do `/home/root/xovi/exthome/qt-resource-rebuilder`.
 
 > [!IMPORTANT]
 > Před instalací se ujistěte, že splňujete všechny požadavky:
 > - reMarkable 1/2, reMarkable Paper Pro
-> - > [!TIP]2
+> - [Xovi](https://github.com/asivery/rm-xovi-extensions/tree/master)
 
 > [!TIP]
 > Doporučuji nainstalovat tento typ rozšíření pro lepší konfiguraci ostatních rozšíření.:
-> - > [!TIP]3
+> - [xovi_Settings_Main](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/xovi_Settings_Main)
 
 
 ### Používání
-* > [!TIP]4 - Čtěte bez rušivých elementů a sledujte své statistiky.
-* > [!TIP]5 - Neomezené možnosti skoku zpět v souborech PDF.
-* > [!TIP]6 - Přizpůsobení panelu nástrojů (tlačítko otevřít panel nástrojů a tlačítko zavřít dokument).
+* [document_Reader_Mode](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/document_Reader_Mode) - Čtěte bez rušivých elementů a sledujte své statistiky.
+* [document_Multiple_Navigation_History](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/document_Multiple_Navigation_History) - Neomezené možnosti skoku zpět v souborech PDF.
+* [document_Toolbar_X](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/document_Toolbar_X) - Přizpůsobení panelu nástrojů (tlačítko otevřít panel nástrojů a tlačítko zavřít dokument).
 
-* > [!TIP]7 - Úžasné hodiny v postranním panelu reMarkable (můžete přidat svátky, speciální dny a počasí).
-* > [!TIP]8 - Částečný překlad postranního panelu do češtiny. Brzy bude dostupná vylepšená verze.
+* [sidebar_Clock](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/sidebar_Clock) - Úžasné hodiny v postranním panelu reMarkable (můžete přidat svátky, speciální dny a počasí).
+* [sidebar_Translated](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/sidebar_Translated) - Částečný překlad postranního panelu do češtiny. Brzy bude dostupná vylepšená verze.
 
-* > [!TIP]9 - Okouzlete svůj reMarkable útulným vzkazem na dobrou noc pro lehký režim spánku.
-* > [!NOTE]0 - Trocha kouzla a váš reMarkable na vás bude mluvit česky.
+* [system_Light_Sleep](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/system_Light_Sleep) - Okouzlete svůj reMarkable útulným vzkazem na dobrou noc pro lehký režim spánku.
+* [system_Translation](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/system_Translation) - Trocha kouzla a váš reMarkable na vás bude mluvit česky.
 
-* > [!NOTE]1 - Rozšířit výběr nástrojů při psaní.
+* [toolbar_Expand_Typing](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/toolbar_Expand_Typing) - Rozšířit výběr nástrojů při psaní.
 
-* > [!NOTE]2 - Příklad vlastního nastavení k rozšíření [![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/PepikVaio/reMarkable_Xovi_Extensions)1.
-* > [!TIP]3 - Přidejte nastavení do svého rozšíření.
+* [xovi_Settings_Example](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/xovi_Settings_Example) - Příklad vlastního nastavení k rozšíření `xovi_Settings_Main`.
+* [xovi_Settings_Main](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/xovi_Settings_Main) - Přidejte nastavení do svého rozšíření.
 
-> [!TIP]0
+<br>
 
 ## Pomoc
 Vytvořte problémy, pokud najdete problém.
@@ -52,9 +52,9 @@ Vytvořte problémy, pokud najdete problém.
 > [!NOTE]
 > ### Authors
 > - **Jméno:** Wajsar Josef  
-> - **Email:** > [!NOTE]4
+> - **Email:** [Wajsar.Josef@hotmail.com](mailto:Wajsar.Josef@hotmail.com)
 > ### Poděkování
 > Inspirace, úryvky kódu atd...
-> - > [!NOTE]5
-> - > [!NOTE]6
+> - [readme - multi language](https://github.com/jonatasemidio/multilanguage-readme-pattern)
+> - [readme - icons](https://shields.io/)
 

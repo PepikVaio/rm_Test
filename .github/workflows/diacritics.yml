@@ -1,33 +1,32 @@
-name: Doplnit diakritiku v README
+name: Restore Czech diacritics
 
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - README.raw.md
 
 permissions:
   contents: write
 
 jobs:
-  diacritics:
+  restore:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Doplnit diakritiku přes Korektor
+      - name: Restore Czech diacritics
         run: |
           curl \
-            --data-urlencode "data@README.raw.md" \
+            --data-urlencode "data@README.md" \
             --data-urlencode "model=czech-diacritics_generator" \
             http://lindat.mff.cuni.cz/services/korektor/api/correct \
           | python3 -c '
 import sys, json
 print(json.load(sys.stdin)["result"])
-' > README.md
+' > README.new.md
 
-      - name: Commit změn
+          mv README.new.md README.md
+
+      - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -35,9 +34,9 @@ print(json.load(sys.stdin)["result"])
           git add README.md
 
           if git diff --cached --quiet; then
-            echo "Žádné změny."
+            echo "No changes"
             exit 0
           fi
 
-          git commit -m "Automaticky doplněna diakritika"
+          git commit -m "Restore Czech diacritics"
           git push

@@ -79,10 +79,19 @@ response = requests.post(
     timeout=120
 )
 
-response.raise_for_status()
+# response.raise_for_status()
 
+
+# result = response.json()["translatedText"]
+
+
+if not response.ok:
+    print("LibreTranslate error:")
+    print(response.text)
+    exit(1)
 
 result = response.json()["translatedText"]
+
 
 
 

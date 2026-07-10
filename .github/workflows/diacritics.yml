@@ -4,40 +4,26 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - README.raw.md
-
-permissions:
-  contents: write
+      - 'README.raw.md'   # zdrojový soubor bez diakritiky
 
 jobs:
   diacritics:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
 
-      - name: Doplnit diakritiku přes Korektor
+      - name: Doplnit diakritiku přes Korektor API
         run: |
-          curl \
-            --data-urlencode "data@README.raw.md" \
-            --data-urlencode "model=czech-diacritics_generator" \
+          RESULT=$(curl -s --data-urlencode "data=$(cat README.raw.md)" \
+            --data-urlencode 'model=czech-diacritics_generator' \
             http://lindat.mff.cuni.cz/services/korektor/api/correct \
-          | python3 -c '
-import sys, json
-print(json.load(sys.stdin)["result"])
-' > README.md
+            | python3 -c "import sys,json; print(json.load(sys.stdin)['result'])")
+          echo "$RESULT" > README.md
 
-      - name: Commit změn
+      - name: Commit výsledek
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
           git add README.md
-
-          if git diff --cached --quiet; then
-            echo "Žádné změny."
-            exit 0
-          fi
-
-          git commit -m "Automaticky doplněna diakritika"
+          git diff --staged --quiet || git commit -m "chore: doplnit diakritiku v README"
           git push

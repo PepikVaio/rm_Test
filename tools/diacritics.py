@@ -19,12 +19,11 @@ def protect_markdown(text):
     global protected
 
     patterns = [
-        r"(?m)^>\s*\[![A-Z]+\].*$",  # GitHub alerts
-        r"(?m)^\[!.*$",              # badges
-        r"\[.*?\]\(.*?\)",            # Markdown odkazy
-        r"<[^>]+>",                   # HTML tagy <br>
+        r"(?m)^>\s*\[![A-Z]+\].*$",   # > [!TIP]
+        r"(?m)^\[!.*$",               # [![badge]]
+        r"\[[^\]]+\]\([^\)]+\)",       # Markdown odkazy
+        r"<[^>]+>",                    # HTML tagy
     ]
-
 
 
     counter = 0

@@ -57,3 +57,4 @@ Vytvořte problémy, pokud najdete problém.
 > Inspirace, úryvky kódu atd...
 > - [readme - multi language](https://github.com/jonatasemidio/multilanguage-readme-pattern)
 > - [readme - icons](https://shields.io/)
+

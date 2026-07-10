@@ -163,3 +163,4 @@ if not files:
 for file in files:
     if file.is_file():
         restore_file(file)
+

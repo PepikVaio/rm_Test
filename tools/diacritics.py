@@ -49,8 +49,15 @@ def protect_markdown(text):
 
 def restore_markdown(text, protected):
 
-    for key, value in protected.items():
-        text = text.replace(key, value)
+    for key in sorted(
+        protected.keys(),
+        key=len,
+        reverse=True
+    ):
+        text = text.replace(
+            key,
+            protected[key]
+        )
 
     return text
 

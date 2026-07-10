@@ -60,6 +60,7 @@ jobs:
         run: |
           pip install requests transformers sentencepiece torch sacremoses
       - name: Add diacritics
+        if: env.TRANSLATE_SOURCE_LANGUAGE == 'cs'
         run: |
           python ${{ env.PATH_DIACRITICS }}
       - name: Translate to English

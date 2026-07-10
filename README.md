@@ -1,3 +1,3 @@
-# This is the forst test fór Github Action.
+# This is the first test for Github Action.
 
-I hoep, that it will working.
+I hoep, that it be working.

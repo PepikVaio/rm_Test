@@ -18,41 +18,38 @@ MODEL = os.environ["DIACRITICS_MODEL"]
 def protect_markdown(text):
 
     protected = {}
-
-    patterns = [
-        r"(?m)^>\s*\[!.*?\].*$",   # GitHub alerts
-        r"(?m)^\[!.*$",            # badges
-        r"\[[^\]]+\]\([^\)]+\)",    # Markdown odkazy
-        r"<[^>]+>",                 # HTML tagy
-    ]
-
     counter = 0
 
-    for pattern in patterns:
-        matches = re.findall(pattern, text)
+    pattern = re.compile(
+        r"(?m)^>\s*\[!.*?\].*$"      # GitHub alerts
+        r"|(?m)^\[!\[.*$"            # badges
+        r"|\[[^\]]+\]\([^\)]+\)"      # Markdown odkazy
+        r"|<[^>]+>"                  # HTML tagy
+    )
 
-        for match in matches:
-            key = f"MARKDOWN_PLACEHOLDER_{counter}"
+    def replace(match):
 
-            protected[key] = match
+        nonlocal counter
 
-            text = text.replace(
-                match,
-                key,
-                1
-            )
+        key = f"MARKDOWN_PLACEHOLDER_{counter}"
 
-            counter += 1
+        protected[key] = match.group(0)
 
-    return text, protected
+        counter += 1
+
+        return key
+
+    result = pattern.sub(
+        replace,
+        text
+    )
+
+    return result, protected
 
 def restore_markdown(text, protected):
 
     for key, value in protected.items():
-        text = text.replace(
-            key,
-            value
-        )
+        text = text.replace(key, value)
 
     return text
 

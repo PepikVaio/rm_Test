@@ -66,9 +66,22 @@ def get_changed_files():
         for file in result.splitlines()
     ]
 
-
+# ===============================================
+# FILE SELECTION LOGIC (priority)
+# 1. FILE_DEFAULT defined:
+#    - process only this file
+#    - only if it was changed
+# 2. FILE_DEFAULT empty:
+#    - process all changed Markdown files
+#
+# (cs)
+# 1. FILE_DEFAULT vyplněné:
+#    - zpracuje pouze tento soubor
+#    - pouze pokud byl změněn
+# 2. FILE_DEFAULT prázdné:
+#    - zpracuje všechny změněné Markdown soubory
+# ===============================================
 changed_files = get_changed_files()
-
 
 if FILE_DEFAULT:
     # Pouze vybraný soubor, ale jen pokud byl změněn

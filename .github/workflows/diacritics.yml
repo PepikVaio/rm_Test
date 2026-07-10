@@ -26,12 +26,19 @@ env:
   # TRANSLATE
   # ======================================
 
-  TRANSLATE_API: https://libretranslate.com/translate
+  # TRANSLATE_API: https://libretranslate.com/translate
+  # TRANSLATE_SOURCE: README.cs.md
+  # TRANSLATE_OUTPUT: README.md
+  # TRANSLATE_SOURCE_LANG: cs
+  # TRANSLATE_TARGET_LANG: en
+
+  # ======================================
+  # TRANSLATION
+  # ======================================
+
+  TRANSLATE_MODEL: Helsinki-NLP/opus-mt-cs-en
   TRANSLATE_SOURCE: README.cs.md
   TRANSLATE_OUTPUT: README.md
-  TRANSLATE_SOURCE_LANG: cs
-  TRANSLATE_TARGET_LANG: en
-
 
 
 
@@ -53,7 +60,7 @@ jobs:
           python-version: "3.11"
       - name: Install dependencies
         run: |
-          pip install requests
+          pip install requests transformers sentencepiece torch
       - name: Add diacritics
         run: |
           python ${{ env.PATH_DIACRITICS }}

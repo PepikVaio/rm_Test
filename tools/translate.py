@@ -1,6 +1,8 @@
 from pathlib import Path
 import os
-import requests
+
+import torch
+from transformers import MarianMTModel, MarianTokenizer
 
 
 # ====================================================================================================================================
@@ -11,7 +13,7 @@ import requests
 # Nastavení překladu z proměnných prostředí GitHub Actions.
 # ====================================================================================================================================
 
-API = os.environ["TRANSLATE_API"]
+MODEL_NAME = os.environ["TRANSLATE_MODEL"]
 
 SOURCE_FILE = Path(
     os.environ.get(
@@ -27,17 +29,6 @@ OUTPUT_FILE = Path(
     )
 )
 
-SOURCE_LANG = os.environ.get(
-    "TRANSLATE_SOURCE_LANG",
-    "cs"
-)
-
-TARGET_LANG = os.environ.get(
-    "TRANSLATE_TARGET_LANG",
-    "en"
-)
-
-
 
 # ====================================================================================================================================
 # CHECK SOURCE FILE
@@ -51,55 +42,67 @@ if not SOURCE_FILE.exists():
     exit(0)
 
 
-
 print(f"Translating: {SOURCE_FILE}")
 
+
+# ====================================================================================================================================
+# LOAD MODEL
+#
+# (cs)
+# Načtení překladového modelu.
+# ====================================================================================================================================
+
+print("Loading translation model...")
+
+tokenizer = MarianTokenizer.from_pretrained(
+    MODEL_NAME
+)
+
+model = MarianMTModel.from_pretrained(
+    MODEL_NAME
+)
+
+
+# ====================================================================================================================================
+# TRANSLATE
+#
+# (cs)
+# Překlad textu.
+# ====================================================================================================================================
 
 text = SOURCE_FILE.read_text(
     encoding="utf-8"
 )
 
 
-
-# ====================================================================================================================================
-# TRANSLATE USING LIBRETRANSLATE API
-#
-# (cs)
-# Překlad pomocí LibreTranslate API.
-# ====================================================================================================================================
-
-response = requests.post(
-    API,
-    data={
-        "q": text,
-        "source": SOURCE_LANG,
-        "target": TARGET_LANG,
-        "format": "text"
-    },
-    timeout=120
+inputs = tokenizer(
+    text,
+    return_tensors="pt",
+    truncation=True,
+    max_length=512
 )
 
-# response.raise_for_status()
+
+with torch.no_grad():
+
+    translated = model.generate(
+        **inputs,
+        max_length=512,
+        num_beams=4
+    )
 
 
-# result = response.json()["translatedText"]
-
-
-if not response.ok:
-    print("LibreTranslate error:")
-    print(response.text)
-    exit(1)
-
-result = response.json()["translatedText"]
-
-
+result = tokenizer.decode(
+    translated[0],
+    skip_special_tokens=True
+)
 
 
 # ====================================================================================================================================
 # SAVE RESULT
 #
 # (cs)
-# Uložení přeloženého souboru.
+# Uložení výsledku.
 # ====================================================================================================================================
 
 OUTPUT_FILE.write_text(

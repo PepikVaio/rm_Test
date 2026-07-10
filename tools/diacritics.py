@@ -7,7 +7,7 @@ import requests
 # =========================
 MODEL = os.environ["DIACRITICS_MODEL"]
 API = os.environ["DIACRITICS_API"]
-FILE_DEFAULT = os.environ.get("FILE_DEFAULT", "*.md")
+FILE_DEFAULT = os.environ.get("FILE_DEFAULT") or "*.md"
 
 selected = os.environ.get("FILE", "").strip()
 
@@ -43,5 +43,5 @@ else:
 
 
 for file in files:
-    if file.exists():
+    if file.is_file():
         restore_file(file)

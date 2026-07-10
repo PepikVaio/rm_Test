@@ -12,19 +12,31 @@ env:
 
   # ================================================
   # CONFIG (editable)
+  # COMMIT_MESSAGE / FILE_DEFAULT: empty or message
   # ================================================
   COMMIT_MESSAGE: "Added Czech diacritics"
   FILE_DEFAULT: ""
   PATH_DIACRITICS: .tools/diacritics.py
-  PATH_REQUIREMENTS: .tools/requirements.txt
   PATH_TRANSLATE: .tools/translate.py
+
+  
+
+
 
   # ======================================
   # TRANSLATION
   # ======================================
-  TRANSLATE_MODEL: Helsinki-NLP/opus-mt-cs-en
-  TRANSLATE_SOURCE: README.cs.md
-  TRANSLATE_OUTPUT: README.md
+
+  TRANSLATE_SOURCE: .language/README.cs.md
+  TRANSLATE_SOURCE_LANGUAGE: cs
+
+  TRANSLATE_OUTPUT_MAIN: README.md
+  TRANSLATE_OUTPUT_MAIN_LANGUAGE: en
+
+  TRANSLATE_OUTPUT_OTHER_LANGUAGE: [de, fr]
+
+
+
 
 permissions:
   contents: write
@@ -42,22 +54,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-          cache: pip
-          cache-dependency-path: ${{ env.PATH_REQUIREMENTS }}
-      - name: Cache Hugging Face model
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/huggingface
-          key: huggingface-${{ env.TRANSLATE_MODEL }}
       - name: Install dependencies
         run: |
-          pip install -r ${{ env.PATH_REQUIREMENTS }}
-          pip install torch --index-url https://download.pytorch.org/whl/cpu
-      - name: Cache Hugging Face models
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/huggingface
-          key: huggingface-${{ runner.os }}-${{ hashFiles('.tools/requirements.txt') }}
+          pip install requests transformers sentencepiece torch
       - name: Add diacritics
         run: |
           python ${{ env.PATH_DIACRITICS }}

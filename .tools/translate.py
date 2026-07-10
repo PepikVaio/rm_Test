@@ -16,7 +16,7 @@ MAIN_OUTPUT = Path(MAIN_OUTPUT_ENV) if MAIN_OUTPUT_ENV else None
 if MAIN_OUTPUT:
     MAIN_OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 
-MAIN_LANGUAGE = os.environ["TRANSLATE_OUTPUT_MAIN_LANGUAGE"]
+MAIN_LANGUAGE = os.environ["TRANSLATE_SOURCE_LANGUAGE"]
 
 OTHER_OUTPUT_PATH = Path(os.environ["TRANSLATE_OUTPUT_OTHER"])
 OTHER_OUTPUT_PATH.mkdir(parents=True, exist_ok=True)
@@ -29,7 +29,7 @@ OTHER_LANGUAGES = [
 
 MAIN_MODEL = f"Helsinki-NLP/opus-mt-{SOURCE_LANGUAGE}-{MAIN_LANGUAGE}"
 OTHER_MODELS = {
-    language: f"Helsinki-NLP/opus-mt-{SOURCE_LANGUAGE}-{language}"
+    language: f"Helsinki-NLP/opus-mt-{MAIN_LANGUAGE}-{language}
     for language in OTHER_LANGUAGES
 }
 

@@ -19,11 +19,9 @@ env:
   PATH_DIACRITICS: .tools/diacritics.py
   PATH_TRANSLATE: .tools/translate.py
 
-  
   # ======================================
-  # TRANSLATION
+  # CONFIG TRANSLATION (editable)
   # ======================================
-
   TRANSLATE_SOURCE: .language/README.cs.md
   TRANSLATE_SOURCE_LANGUAGE: cs
 
@@ -32,9 +30,6 @@ env:
 
   TRANSLATE_OUTPUT_OTHER: .language
   TRANSLATE_OUTPUT_OTHER_LANGUAGE: "de,fr,it"
-
-
-
 
 permissions:
   contents: write
@@ -54,7 +49,7 @@ jobs:
           python-version: "3.11"
       - name: Install dependencies
         run: |
-          pip install requests transformers sentencepiece torch
+          pip install requests transformers sentencepiece torch sacremoses
       - name: Add diacritics
         run: |
           python ${{ env.PATH_DIACRITICS }}

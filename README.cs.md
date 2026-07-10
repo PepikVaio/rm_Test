@@ -31,15 +31,15 @@ Soubory `.qmd`, `.rcc` a `.json` (pokud jsou k dispozici) zkopírujte do `/home/
 
 
 ### Používání
-* [document_Reader_Módě](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/document_Reader_Módě) - Čtěte bez rušivých elementů a sledujte své statistiky.
+* [document_Reader_Mode](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/document_Reader_Mode) - Čtěte bez rušivých elementů a sledujte své statistiky.
 * [document_Multiple_Navigation_History](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/document_Multiple_Navigation_History) - Neomezené možnosti skoku zpět v souborech PDF.
 * [document_Toolbar_X](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/document_Toolbar_X) - Přizpůsobení panelu nástrojů (tlačítko otevřít panel nástrojů a tlačítko zavřít dokument).
 
 * [sidebar_Clock](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/sidebar_Clock) - Úžasné hodiny v postranním panelu reMarkable (můžete přidat svátky, speciální dny a počasí).
 * [sidebar_Translated](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/sidebar_Translated) - Částečný překlad postranního panelu do češtiny. Brzy bude dostupná vylepšená verze.
 
-* [systém_Light_Sleep](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/systém_Light_Sleep) - Okouzlete svůj reMarkable útulným vzkazem na dobrou noc pro lehký režim spánku.
-* [systém_Translation](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/systém_Translation) - Trocha kouzla a váš reMarkable na vás bude mluvit česky.
+* [system_Light_Sleep](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/system_Light_Sleep) - Okouzlete svůj reMarkable útulným vzkazem na dobrou noc pro lehký režim spánku.
+* [system_Translation](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/system_Translation) - Trocha kouzla a váš reMarkable na vás bude mluvit česky.
 
 * [toolbar_Expand_Typing](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/toolbar_Expand_Typing) - Rozšířit výběr nástrojů při psaní.
 

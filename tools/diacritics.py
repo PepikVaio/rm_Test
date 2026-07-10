@@ -93,6 +93,10 @@ def restore_file(path: Path):
     result = response.json()["result"]
     result = restore_markdown(result, protected)
 
+    print("========== RESTORED ==========")
+    print(result)
+    print("================================")
+
     path.write_text(
         result,
         encoding="utf-8"

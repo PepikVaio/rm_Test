@@ -1,3 +1,1 @@
-# Tohle je první test pro Github Action.
-
-Já hoep, že to funguje.
+# Toto je prvni test pouze prekladu, ktery pisu sice na klavesnici Imac al epozdeji na reMarkable 2 i pp.

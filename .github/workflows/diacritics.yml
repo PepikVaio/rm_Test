@@ -17,7 +17,7 @@ env:
   COMMIT_MESSAGE: "Added Czech diacritics"
   FILE_DEFAULT: ""
   PATH_DIACRITICS: .tools/diacritics.py
-  PATH_REQUIREMENTS: .tools/translate.py
+  PATH_REQUIREMENTS: .tools/requirements.txt
   PATH_TRANSLATE: .tools/translate.py
 
 
@@ -48,7 +48,7 @@ jobs:
         with:
           python-version: "3.11"
           cache: pip
-          cache-dependency-path: python ${{ env.PATH_REQUIREMENTS }}
+          cache-dependency-path: ${{ env.PATH_REQUIREMENTS }}
       - name: Install dependencies
         run: |
           pip install -r ${{ env.PATH_REQUIREMENTS }}

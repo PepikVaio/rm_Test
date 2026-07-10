@@ -1,1 +1,1 @@
-# Toto je prvni test pouze prekladu, ktery pisu sice na klavesnici Imac al epozdeji na reMarkable 2 i pp.
+# Toto je první test pouze překladu, který píšu sice na klávesnici Imac al epozdeji na reMarkable 2 i pp.

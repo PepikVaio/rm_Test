@@ -19,11 +19,10 @@ def protect_markdown(text):
     global protected
 
     patterns = [
-
-
-    r"\[[^\]]+\]",  # [...]
+    # r"\[[^\]]+\]",  # [...]
     r"<[^>]+>",     # <...>
     ]
+
 
     counter = 0
 

@@ -8,7 +8,7 @@ from pathlib import Path
 # INPUTS (GitHub Action)
 # =========================
 API = os.environ["DIACRITICS_API"]
-FILE_DEFAULT = os.environ.get("FILE_DEFAULT", "").strip()
+DIACRITICS_FILE = os.environ.get("DIACRITICS_FILE", "").strip()
 MODEL = os.environ["DIACRITICS_MODEL"]
 
 # ===================================================================================================================
@@ -129,25 +129,25 @@ def get_changed_files():
 
 # ===============================================
 # FILE SELECTION LOGIC (priority)
-# 1. FILE_DEFAULT defined:
+# 1. DIACRITICS_FILE defined:
 #    - process only this file
 #    - only if it was changed
-# 2. FILE_DEFAULT empty:
+# 2. DIACRITICS_FILE empty:
 #    - process all changed Markdown files
 #
 # (cs)
-# 1. FILE_DEFAULT vyplněné:
+# 1. DIACRITICS_FILE vyplněné:
 #    - zpracuje pouze tento soubor
 #    - pouze pokud byl změněn
-# 2. FILE_DEFAULT prázdné:
+# 2. DIACRITICS_FILE prázdné:
 #    - zpracuje všechny změněné Markdown soubory
 # ===============================================
 changed_files = get_changed_files()
 
-if FILE_DEFAULT:
+if DIACRITICS_FILE:
     files = [
-        Path(FILE_DEFAULT)
-    ] if Path(FILE_DEFAULT) in changed_files else []
+        Path(DIACRITICS_FILE)
+    ] if Path(DIACRITICS_FILE) in changed_files else []
 
 else:
     files = [

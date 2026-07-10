@@ -7,38 +7,60 @@ env:
   # ======================================
   # CONFIG DATA
   # ======================================
-  DIACRITICS_API: http://lindat.mff.cuni.cz/services/korektor/api/correct
-  DIACRITICS_MODEL: czech-diacritics_generator
-
-  # ================================================
-  # CONFIG (editable)
-  # COMMIT_MESSAGE / FILE_DEFAULT: empty or message
-  # ================================================
-  COMMIT_MESSAGE: "Added Czech diacritics"
-  FILE_DEFAULT: ""
+  IS_ENABLED_TRANSLATE: false
   PATH_DIACRITICS: .tools/diacritics.py
   PATH_TRANSLATE: .tools/translate.py
 
-  # ======================================
+  # ==================================================
+  # CONFIG DIACRITICS (editable for cs)
+  # DIACRITICS_MESSAGE: empty or message
+  # DIACRITICS_FILE: empty = all or (choose *md file)
+  # ==================================================
+  DIACRITICS_API: http://lindat.mff.cuni.cz/services/korektor/api/correct
+  DIACRITICS_FILE: ""
+  DIACRITICS_MESSAGE: "Added Czech diacritics"
+  DIACRITICS_MODEL: czech-diacritics_generator
+
+  # ===============================================================
   # CONFIG TRANSLATION (editable)
-  # ======================================
+  #
+  # 1. For users whose main language is not English:
+  #    - Set your language as the source.
+  #    - English README.md will be generated automatically.
+  #
   # TRANSLATE_SOURCE: .language/README.cs.md
   # TRANSLATE_SOURCE_LANGUAGE: cs
-
+  #
   # TRANSLATE_OUTPUT_MAIN: README.md
   # TRANSLATE_OUTPUT_MAIN_LANGUAGE: en
-
+  #
   # TRANSLATE_OUTPUT_OTHER: .language
   # TRANSLATE_OUTPUT_OTHER_LANGUAGE: "de, fr, it"
-
-  TRANSLATE_SOURCE: README.md
-  TRANSLATE_SOURCE_LANGUAGE: en
-
-  TRANSLATE_OUTPUT_MAIN: 
-  TRANSLATE_OUTPUT_MAIN_LANGUAGE: 
-
+  #
+  # ===============================================================
+  # ===============================================================
+  #
+  # 2. For users whose main language is English:
+  #    - Use README.md as the source file.
+  #    - Only translations into other languages will be generated.
+  #
+  # TRANSLATE_SOURCE: README.md
+  # TRANSLATE_SOURCE_LANGUAGE: en
+  #
+  # TRANSLATE_OUTPUT_MAIN: ""
+  # TRANSLATE_OUTPUT_MAIN_LANGUAGE: ""
+  #
+  # TRANSLATE_OUTPUT_OTHER: .language
+  # TRANSLATE_OUTPUT_OTHER_LANGUAGE: "de, fr, it"
+  # ===============================================================
+  TRANSLATE_SOURCE: .language/README.cs.md
+  TRANSLATE_SOURCE_LANGUAGE: cs
+  
+  TRANSLATE_OUTPUT_MAIN: README.md
+  TRANSLATE_OUTPUT_MAIN_LANGUAGE: en
+  
   TRANSLATE_OUTPUT_OTHER: .language
-  TRANSLATE_OUTPUT_OTHER_LANGUAGE: "de, fr, it, cs"
+  TRANSLATE_OUTPUT_OTHER_LANGUAGE: "de, fr, it"
 
 permissions:
   contents: write
@@ -63,7 +85,8 @@ jobs:
         if: env.TRANSLATE_SOURCE_LANGUAGE == 'cs'
         run: |
           python ${{ env.PATH_DIACRITICS }}
-      - name: Translate to English
+      - name: Translate *md files
+        if: env.IS_ENABLED_TRANSLATE == 'true'
         run: |
           python ${{ env.PATH_TRANSLATE }}
       - name: Commit result
@@ -78,5 +101,5 @@ jobs:
             exit 0
           fi
 
-          git commit -m "${{ env.COMMIT_MESSAGE }}"
+          git commit -m "${{ env.DIACRITICS_MESSAGE }}"
           git push

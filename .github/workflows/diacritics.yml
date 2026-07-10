@@ -64,9 +64,9 @@ jobs:
       - name: Add diacritics
         run: |
           python ${{ env.PATH_DIACRITICS }}
-      - name: Translate to English
-        run: |
-          python ${{ env.PATH_TRANSLATE }}
+      # - name: Translate to English
+      #   run: |
+      #     python ${{ env.PATH_TRANSLATE }}
       - name: Commit result
         run: |
           git config user.name "github-actions[bot]"

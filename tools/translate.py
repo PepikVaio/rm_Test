@@ -4,30 +4,52 @@ import requests
 
 
 # ====================================================================================================================================
-# CONFIG
-# Translation source and destination
+# CONFIGURATION
+# Translation settings from GitHub Actions environment variables.
 #
 # (cs)
-# Zdrojový a cílový soubor překladu
+# Nastavení překladu z proměnných prostředí GitHub Actions.
 # ====================================================================================================================================
-
-SOURCE_FILE = Path(os.environ.get("TRANSLATE_SOURCE", "README.cs.md"))
-OUTPUT_FILE = Path(os.environ.get("TRANSLATE_OUTPUT", "README.md"))
 
 API = os.environ["TRANSLATE_API"]
-MODEL = os.environ["TRANSLATE_MODEL"]
+
+SOURCE_FILE = Path(
+    os.environ.get(
+        "TRANSLATE_SOURCE",
+        "README.cs.md"
+    )
+)
+
+OUTPUT_FILE = Path(
+    os.environ.get(
+        "TRANSLATE_OUTPUT",
+        "README.md"
+    )
+)
+
+SOURCE_LANG = os.environ.get(
+    "TRANSLATE_SOURCE_LANG",
+    "cs"
+)
+
+TARGET_LANG = os.environ.get(
+    "TRANSLATE_TARGET_LANG",
+    "en"
+)
+
 
 
 # ====================================================================================================================================
-# CHECK FILE
+# CHECK SOURCE FILE
 #
 # (cs)
-# Kontrola existence souboru
+# Kontrola zdrojového souboru.
 # ====================================================================================================================================
 
 if not SOURCE_FILE.exists():
-    print(f"No translation source found: {SOURCE_FILE}")
+    print(f"No file to translate: {SOURCE_FILE}")
     exit(0)
+
 
 
 print(f"Translating: {SOURCE_FILE}")
@@ -38,18 +60,21 @@ text = SOURCE_FILE.read_text(
 )
 
 
+
 # ====================================================================================================================================
-# TRANSLATION REQUEST
+# TRANSLATE USING LIBRETRANSLATE API
 #
 # (cs)
-# Požadavek na překlad
+# Překlad pomocí LibreTranslate API.
 # ====================================================================================================================================
 
 response = requests.post(
     API,
     data={
-        "data": text,
-        "model": MODEL
+        "q": text,
+        "source": SOURCE_LANG,
+        "target": TARGET_LANG,
+        "format": "text"
     },
     timeout=120
 )
@@ -57,14 +82,15 @@ response = requests.post(
 response.raise_for_status()
 
 
-result = response.json()["result"]
+result = response.json()["translatedText"]
+
 
 
 # ====================================================================================================================================
 # SAVE RESULT
 #
 # (cs)
-# Uložení výsledku
+# Uložení přeloženého souboru.
 # ====================================================================================================================================
 
 OUTPUT_FILE.write_text(

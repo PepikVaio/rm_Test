@@ -25,11 +25,18 @@ env:
   # TRANSLATE
   # ======================================
   TRANSLATE_API: http://lindat.mff.cuni.cz/services/korektor/api/correct
-  TRANSLATE_MODEL: czech-diacritics_generator
 
+  # ======================================
+  # TRANSLATE
+  # ======================================
 
+  TRANSLATE_API: https://libretranslate.com/translate
   TRANSLATE_SOURCE: README.cs.md
   TRANSLATE_OUTPUT: README.md
+  TRANSLATE_SOURCE_LANG: cs
+  TRANSLATE_TARGET_LANG: en
+
+
 
 
 permissions:

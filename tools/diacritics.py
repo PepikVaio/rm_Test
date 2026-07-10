@@ -41,7 +41,8 @@ def protect_markdown(text):
 
             text = text.replace(
                 match,
-                key
+                key,
+                1
             )
 
             counter += 1

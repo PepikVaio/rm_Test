@@ -10,6 +10,57 @@ API = os.environ["DIACRITICS_API"]
 FILE_DEFAULT = os.environ.get("FILE_DEFAULT", "").strip()
 MODEL = os.environ["DIACRITICS_MODEL"]
 
+
+protected = {}
+
+
+def protect_markdown(text):
+    global protected
+
+    patterns = [
+        r">\s*\[![A-Z]+\]"              # GitHub alerts [!NOTE], [!IMPORATNT], [!TIP], atd...
+        r"\[.*?\]\(.*?\)",              # Markdown odkazy
+        r"https?://\S+",                # URL
+        r"!\[.*?\]\(.*?\)",             # obrázky
+        r"`[^`]+`",                     # inline code
+        r"```[\s\S]*?```",              # code blocks
+        r"<[^>]+>",                     # HTML tagy
+    ]
+
+    counter = 0
+
+    for pattern in patterns:
+        matches = re.findall(
+            pattern,
+            text
+        )
+
+        for match in matches:
+            key = f"MARKDOWN_PLACEHOLDER_{counter}"
+
+            protected[key] = match
+
+            text = text.replace(
+                match,
+                key
+            )
+
+            counter += 1
+
+    return text
+
+
+def restore_markdown(text):
+
+    for key, value in protected.items():
+        text = text.replace(
+            key,
+            value
+        )
+
+    return text
+
+
 # ======================================================================================
 # ADD DIACRITICS IN FILE
 # Sends file content to Korektor API and replaces original content with corrected text.
@@ -21,11 +72,12 @@ def restore_file(path: Path):
     print(f"I am repairing: {path}")
 
     text = path.read_text(encoding="utf-8")
+    original = protect_markdown(text)
 
     response = requests.post(
         API,
         data={
-            "data": text,
+            "data": original,
             "model": MODEL
         },
         timeout=60
@@ -34,6 +86,7 @@ def restore_file(path: Path):
     response.raise_for_status()
 
     result = response.json()["result"]
+    result = restore_markdown(result)
 
     path.write_text(
         result,
@@ -41,7 +94,6 @@ def restore_file(path: Path):
     )
 
     print(f"Done: {path}")
-
 
 # =======================================================================================
 # GET FILES CHANGED IN CURRENT PUSH

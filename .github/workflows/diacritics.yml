@@ -80,7 +80,10 @@ jobs:
           python-version: "3.11"
       - name: Install dependencies
         run: |
-          pip install requests transformers sentencepiece torch sacremoses
+          pip install requests
+          if [ "${{ env.IS_ENABLED_TRANSLATE }}" = "true" ]; then
+            pip install transformers sentencepiece torch sacremoses
+          fi
       - name: Add diacritics
         if: env.TRANSLATE_SOURCE_LANGUAGE == 'cs'
         run: |

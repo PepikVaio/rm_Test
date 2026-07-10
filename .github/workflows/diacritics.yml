@@ -21,10 +21,6 @@ env:
 
 
 
-  # ======================================
-  # TRANSLATE
-  # ======================================
-  TRANSLATE_API: http://lindat.mff.cuni.cz/services/korektor/api/correct
 
   # ======================================
   # TRANSLATE

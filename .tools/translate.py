@@ -8,7 +8,6 @@ from transformers import MarianMTModel, MarianTokenizer
 # =========================
 
 SOURCE_FILE = Path(os.environ["TRANSLATE_SOURCE"])
-
 SOURCE_LANGUAGE = os.environ["TRANSLATE_SOURCE_LANGUAGE"]
 
 MAIN_OUTPUT_ENV = os.environ.get("TRANSLATE_OUTPUT_MAIN", "")
@@ -17,10 +16,7 @@ MAIN_OUTPUT = Path(MAIN_OUTPUT_ENV) if MAIN_OUTPUT_ENV else None
 if MAIN_OUTPUT:
     MAIN_OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 
-MAIN_LANGUAGE = os.environ.get(
-    "TRANSLATE_OUTPUT_MAIN_LANGUAGE",
-    SOURCE_LANGUAGE
-)
+MAIN_LANGUAGE = os.environ.get("TRANSLATE_OUTPUT_MAIN_LANGUAGE" ) or SOURCE_LANGUAGE
 
 OTHER_OUTPUT_PATH = Path(os.environ["TRANSLATE_OUTPUT_OTHER"])
 OTHER_OUTPUT_PATH.mkdir(parents=True, exist_ok=True)
@@ -30,7 +26,6 @@ OTHER_LANGUAGES = [
     for lang in os.environ["TRANSLATE_OUTPUT_OTHER_LANGUAGE"].split(",")
     if lang.strip()
 ]
-
 
 # -------------------------------------------------
 # Translation direction
@@ -46,10 +41,7 @@ OTHER_LANGUAGES = [
 MAIN_MODEL = None
 
 if MAIN_LANGUAGE != SOURCE_LANGUAGE:
-    MAIN_MODEL = (
-        f"Helsinki-NLP/opus-mt-{SOURCE_LANGUAGE}-{MAIN_LANGUAGE}"
-    )
-
+    MAIN_MODEL = (f"Helsinki-NLP/opus-mt-{SOURCE_LANGUAGE}-{MAIN_LANGUAGE}")
 
 TRANSLATION_BASE_LANGUAGE = (
     MAIN_LANGUAGE

@@ -5,7 +5,7 @@
 [![supported: rmPP](https://img.shields.io/badge/rmPP-supported-blue)](https://remarkable.com/store/remarkable-paper/pro)
 [![supported: FW](https://img.shields.io/badge/fw_3.xx-supported-green)]()
 
-# Xovi rozšíření!
+# Xovi rozšířeni!
 > Přizpůsobte si svůj tablet reMarkable pomocí těchto rozšíření.
 > <br>
 > Tato rozšíření přinášejí větší svobodu do vašeho tabletu reMarkable.  

@@ -19,8 +19,8 @@ def protect_markdown(text):
     global protected
 
     patterns = [
-    # r"\[[^\]]+\]",  # [...]
-    r"<[^>]+>",     # <...>
+        r"\[!\[.*$",   # celý řádek badge
+        r"<[^>]+>",    # HTML tagy
     ]
 
 

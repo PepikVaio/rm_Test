@@ -1,35 +1,29 @@
-name: Restore Czech diacritics
+name: Doplnit diakritiku v README
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'README.raw.md'   # zdrojový soubor bez diakritiky
 
 jobs:
   diacritics:
-
     runs-on: ubuntu-latest
-
     steps:
+      - uses: actions/checkout@v4
 
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
-      - name: Clone UFAL tool
+      - name: Doplnit diakritiku přes Korektor API
         run: |
-          git clone https://github.com/ufal/bert-diacritics-restoration.git tools/ufal
+          RESULT=$(curl -s --data-urlencode "data=$(cat README.raw.md)" \
+            --data-urlencode 'model=czech-diacritics_generator' \
+            http://lindat.mff.cuni.cz/services/korektor/api/correct \
+            | python3 -c "import sys,json; print(json.load(sys.stdin)['result'])")
+          echo "$RESULT" > README.md
 
-      - name: Install dependencies
+      - name: Commit výsledek
         run: |
-          pip install torch transformers sentencepiece
-
-      - name: Restore diacritics
-        run: |
-          python tools/diacritics.py
-
-      - name: Show result
-        run: |
-          cat README_result.md
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add README.md
+          git diff --staged --quiet || git commit -m "chore: doplnit diakritiku v README"
+          git push

@@ -5,6 +5,9 @@ on:
     paths:
       - "**.md"
 
+permissions:
+  contents: write
+
 jobs:
   translate:
     uses: PepikVaio/reMarkable_Github_Actions/.github/workflows/diacritics.yml@main

@@ -7,7 +7,9 @@ env:
   # ======================================
   # CONFIG DATA
   # ======================================
-  IS_ENABLED_TRANSLATE: false
+  DIACRITICS_API: http://lindat.mff.cuni.cz/services/korektor/api/correct
+  DIACRITICS_MODEL: czech-diacritics_generator
+
   PATH_DIACRITICS: .tools/diacritics.py
   PATH_TRANSLATE: .tools/translate.py
 
@@ -16,10 +18,10 @@ env:
   # DIACRITICS_MESSAGE: empty or message
   # DIACRITICS_FILE: empty = all or (choose *md file)
   # ==================================================
-  DIACRITICS_API: http://lindat.mff.cuni.cz/services/korektor/api/correct
+  IS_ENABLED_TRANSLATE: true
+
   DIACRITICS_FILE: ""
   DIACRITICS_MESSAGE: "Added Czech diacritics"
-  DIACRITICS_MODEL: czech-diacritics_generator
 
   # ===============================================================
   # CONFIG TRANSLATION (editable)

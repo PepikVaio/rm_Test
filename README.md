@@ -1,6 +1,6 @@
 # Test
 
-Dnes jsem sel do prace.
-Muj novy projekt je velmi dulezity.
+Dnes jsem šel do práce.
+Můj nový projekt je velmi důležitý.
 
-Potom jsem cetl poznamky z minuleho tydne.
+Potom jsem četl poznámky z minulého týdne.

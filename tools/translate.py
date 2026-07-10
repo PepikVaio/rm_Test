@@ -1,58 +1,28 @@
 from pathlib import Path
 import os
+import re
 
-import torch
 from transformers import MarianMTModel, MarianTokenizer
 
-
-# ====================================================================================================================================
-# CONFIGURATION
-# Translation settings from GitHub Actions environment variables.
-#
-# (cs)
-# Nastavení překladu z proměnných prostředí GitHub Actions.
-# ====================================================================================================================================
 
 MODEL_NAME = os.environ["TRANSLATE_MODEL"]
 
 SOURCE_FILE = Path(
-    os.environ.get(
-        "TRANSLATE_SOURCE",
-        "README.cs.md"
-    )
+    os.environ.get("TRANSLATE_SOURCE", "README.cs.md")
 )
 
 OUTPUT_FILE = Path(
-    os.environ.get(
-        "TRANSLATE_OUTPUT",
-        "README.md"
-    )
+    os.environ.get("TRANSLATE_OUTPUT", "README.md")
 )
 
 
-# ====================================================================================================================================
-# CHECK SOURCE FILE
-#
-# (cs)
-# Kontrola zdrojového souboru.
-# ====================================================================================================================================
-
 if not SOURCE_FILE.exists():
-    print(f"No file to translate: {SOURCE_FILE}")
+    print(f"No file: {SOURCE_FILE}")
     exit(0)
 
 
 print(f"Translating: {SOURCE_FILE}")
 
-
-# ====================================================================================================================================
-# LOAD MODEL
-#
-# (cs)
-# Načtení překladového modelu.
-# ====================================================================================================================================
-
-print("Loading translation model...")
 
 tokenizer = MarianTokenizer.from_pretrained(
     MODEL_NAME
@@ -63,27 +33,17 @@ model = MarianMTModel.from_pretrained(
 )
 
 
-# ====================================================================================================================================
-# TRANSLATE
-#
-# (cs)
-# Překlad textu.
-# ====================================================================================================================================
+def translate_text(text):
 
-text = SOURCE_FILE.read_text(
-    encoding="utf-8"
-)
+    if not text.strip():
+        return text
 
-
-inputs = tokenizer(
-    text,
-    return_tensors="pt",
-    truncation=True,
-    max_length=512
-)
-
-
-with torch.no_grad():
+    inputs = tokenizer(
+        text,
+        return_tensors="pt",
+        truncation=True,
+        max_length=512
+    )
 
     translated = model.generate(
         **inputs,
@@ -91,22 +51,69 @@ with torch.no_grad():
         num_beams=4
     )
 
+    return tokenizer.decode(
+        translated[0],
+        skip_special_tokens=True
+    )
 
-result = tokenizer.decode(
-    translated[0],
-    skip_special_tokens=True
+
+def translate_markdown(text):
+
+    result = []
+
+    in_code = False
+
+    for line in text.splitlines():
+
+        # Markdown code block
+        if line.startswith("```"):
+            in_code = not in_code
+            result.append(line)
+            continue
+
+
+        # Kód nepřekládat
+        if in_code:
+            result.append(line)
+            continue
+
+
+        # Nadpisy ponechat znak #, překládat text
+        if line.startswith("#"):
+            prefix = re.match(r"^#+\s*", line).group()
+            content = line[len(prefix):]
+
+            result.append(
+                prefix + translate_text(content)
+            )
+            continue
+
+
+        # Prázdné řádky
+        if not line.strip():
+            result.append(line)
+            continue
+
+
+        # Normální text
+        result.append(
+            translate_text(line)
+        )
+
+
+    return "\n".join(result)
+
+
+text = SOURCE_FILE.read_text(
+    encoding="utf-8"
 )
 
 
-# ====================================================================================================================================
-# SAVE RESULT
-#
-# (cs)
-# Uložení výsledku.
-# ====================================================================================================================================
+translated = translate_markdown(text)
+
 
 OUTPUT_FILE.write_text(
-    result,
+    translated,
     encoding="utf-8"
 )
 

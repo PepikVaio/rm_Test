@@ -32,14 +32,58 @@ model = MarianMTModel.from_pretrained(
     MODEL_NAME
 )
 
+protected = {}
+
+
+def protect_text(text):
+    global protected
+
+    patterns = [
+        r"`[^`]+`",                 # inline code
+        r"/[A-Za-z0-9_./-]+",       # cesty
+        r"\.[a-zA-Z0-9]+",          # přípony
+        r"\bXovi\b",                # název projektu
+        r"\bQt\b",
+        r"\bQML\b",
+    ]
+
+    counter = 0
+
+    for pattern in patterns:
+        for match in re.findall(pattern, text):
+
+            key = f"PLACEHOLDER_{counter}"
+
+            protected[key] = match
+
+            text = text.replace(
+                match,
+                key
+            )
+
+            counter += 1
+
+    return text
+
+def restore_text(text):
+
+    for key, value in protected.items():
+        text = text.replace(
+            key,
+            value
+        )
+
+    return text
 
 def translate_text(text):
 
     if not text.strip():
         return text
+    
+    original = protect_text(text)
 
     inputs = tokenizer(
-        text,
+        original,
         return_tensors="pt",
         truncation=True,
         max_length=512
@@ -51,11 +95,12 @@ def translate_text(text):
         num_beams=4
     )
 
-    return tokenizer.decode(
+    result = tokenizer.decode(
         translated[0],
         skip_special_tokens=True
     )
 
+    return restore_text(result)
 
 def translate_markdown(text):
 

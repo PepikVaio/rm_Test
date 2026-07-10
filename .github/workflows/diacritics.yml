@@ -58,16 +58,15 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      # pip install requests transformers sentencepiece torch
       - name: Install dependencies
         run: |
-          pip install requests
+          pip install requests transformers sentencepiece torch
       - name: Add diacritics
         run: |
           python ${{ env.PATH_DIACRITICS }}
-      # - name: Translate to English
-      #   run: |
-      #     python ${{ env.PATH_TRANSLATE }}
+      - name: Translate to English
+        run: |
+          python ${{ env.PATH_TRANSLATE }}
       - name: Commit result
         run: |
           git config user.name "github-actions[bot]"

@@ -1,8 +1,8 @@
-from pathlib import Path
 import os
-import subprocess
-import requests
 import re
+import requests
+import subprocess
+from pathlib import Path
 
 # =========================
 # INPUTS (GitHub Action)
@@ -11,9 +11,17 @@ API = os.environ["DIACRITICS_API"]
 FILE_DEFAULT = os.environ.get("FILE_DEFAULT", "").strip()
 MODEL = os.environ["DIACRITICS_MODEL"]
 
-
-
-
+# ===================================================================================================================
+# PROTECT MARKDOWN ELEMENTS
+# Temporarily replaces Markdown syntax elements with placeholders before sending text to the correction API.
+# This prevents the API from modifying links, badges, alerts, HTML tags, and other non-text parts of the document.
+# Placeholders are restored after correction to keep the original Markdown structure.
+#
+# (cs)
+# Dočasně nahradí prvky Markdownu zástupnými značkami před odesláním textu do API.
+# Zabrání tak úpravám odkazů, odznaků, upozornění, HTML tagů a dalších částí dokumentu, které nemají být opravovány.
+# Po dokončení opravy se zástupné značky obnoví zpět na původní obsah a zachová se původní struktura Markdownu.
+# ===================================================================================================================
 
 def protect_markdown(text):
 
@@ -61,7 +69,6 @@ def restore_markdown(text, protected):
 
     return text
 
-
 # ======================================================================================
 # ADD DIACRITICS IN FILE
 # Sends file content to Korektor API and replaces original content with corrected text.
@@ -74,10 +81,6 @@ def restore_file(path: Path):
 
     text = path.read_text(encoding="utf-8")
     original, protected = protect_markdown(text)
-
-    print("========== PROTECTED ==========")
-    print(original)
-    print("================================")
 
     response = requests.post(
         API,
@@ -92,10 +95,6 @@ def restore_file(path: Path):
 
     result = response.json()["result"]
     result = restore_markdown(result, protected)
-
-    print("========== RESTORED ==========")
-    print(result)
-    print("================================")
 
     path.write_text(
         result,

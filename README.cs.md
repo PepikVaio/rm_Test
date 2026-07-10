@@ -54,6 +54,6 @@ Vytvořte problémy, pokud najdete problém.
 > - **Jméno:** Wajsar Josef  
 > - **Email:** [Wajsar.Josef@hotmail.com](mailto:Wajsar.Josef@hotmail.com)
 > ### Poděkování
-> Inspirace, úryvky kódu atd...
+> Inspirace, uryvky kódu atd...
 > - [readme - multi language](https://github.com/jonatasemidio/multilanguage-readme-pattern)
 > - [readme - icons](https://shields.io/)

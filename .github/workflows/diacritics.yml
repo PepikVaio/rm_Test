@@ -1,44 +1,47 @@
 name: Restore Czech diacritics
 
 on:
-  workflow_dispatch:
-    inputs:
-      file:
-        description: "Soubor pro opravu (prázdné = všechny .md)"
-        required: false
-        default: ""
+  push:
 
 env:
-  DIACRITICS_MODEL: czech-diacritics_generator
+  # ======================================
+  # CONFIG DATA
+  # ======================================
   DIACRITICS_API: http://lindat.mff.cuni.cz/services/korektor/api/correct
-  DEFAULT_EXTENSION: "*.md"
+  DIACRITICS_MODEL: czech-diacritics_generator
+
+  # ================================================
+  # CONFIG (editable)
+  # COMMIT_MESSAGE / FILE_DEFAULT: empty or message
+  # ================================================
+  COMMIT_MESSAGE: "Added Czech diacritics"
+  FILE_DEFAULT: ""
+  PATH_SCRIPT: tools/diacritics.py
 
 permissions:
   contents: write
 
 jobs:
-  restore:
+  main:
+    name: 'Update the public-facing repo'
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
+        with:
+          fetch-depth: 0
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-
       - name: Install dependencies
         run: |
           pip install requests
-
-      - name: Restore diacritics
+      - name: Add diacritics
         env:
-          FILE: ${{ github.event.inputs.file }}
+          FILE: ${{ inputs.file }}
         run: |
-          python tools/diacritics.py
-
+          python ${{ env.PATH_SCRIPT }}
       - name: Commit result
         run: |
           git config user.name "github-actions[bot]"
@@ -51,5 +54,5 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Restore Czech diacritics"
+          git commit -m "${{ env.COMMIT_MESSAGE }}"
           git push

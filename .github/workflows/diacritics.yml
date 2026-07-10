@@ -12,7 +12,6 @@ env:
 
   # ================================================
   # CONFIG (editable)
-  # COMMIT_MESSAGE / FILE_DEFAULT: empty or message
   # ================================================
   COMMIT_MESSAGE: "Added Czech diacritics"
   FILE_DEFAULT: ""
@@ -20,16 +19,12 @@ env:
   PATH_REQUIREMENTS: .tools/requirements.txt
   PATH_TRANSLATE: .tools/translate.py
 
-
   # ======================================
   # TRANSLATION
   # ======================================
-
   TRANSLATE_MODEL: Helsinki-NLP/opus-mt-cs-en
   TRANSLATE_SOURCE: README.cs.md
   TRANSLATE_OUTPUT: README.md
-
-
 
 permissions:
   contents: write
@@ -49,13 +44,11 @@ jobs:
           python-version: "3.11"
           cache: pip
           cache-dependency-path: ${{ env.PATH_REQUIREMENTS }}
-
       - name: Cache Hugging Face model
         uses: actions/cache@v4
         with:
           path: ~/.cache/huggingface
           key: huggingface-${{ env.TRANSLATE_MODEL }}
-
       - name: Install dependencies
         run: |
           pip install -r ${{ env.PATH_REQUIREMENTS }}

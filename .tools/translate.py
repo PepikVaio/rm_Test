@@ -17,7 +17,10 @@ MAIN_OUTPUT = Path(MAIN_OUTPUT_ENV) if MAIN_OUTPUT_ENV else None
 if MAIN_OUTPUT:
     MAIN_OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 
-MAIN_LANGUAGE = os.environ["TRANSLATE_SOURCE_LANGUAGE"]
+MAIN_LANGUAGE = os.environ.get(
+    "TRANSLATE_OUTPUT_MAIN_LANGUAGE",
+    SOURCE_LANGUAGE
+)
 
 OTHER_OUTPUT_PATH = Path(os.environ["TRANSLATE_OUTPUT_OTHER"])
 OTHER_OUTPUT_PATH.mkdir(parents=True, exist_ok=True)
@@ -28,13 +31,37 @@ OTHER_LANGUAGES = [
     if lang.strip()
 ]
 
+
+# -------------------------------------------------
+# Translation direction
+#
+# If main output exists:
+#   SOURCE -> MAIN
+#   MAIN -> OTHER LANGUAGES
+#
+# If no main output:
+#   SOURCE -> OTHER LANGUAGES
+# -------------------------------------------------
+
 MAIN_MODEL = None
 
 if MAIN_LANGUAGE != SOURCE_LANGUAGE:
-    MAIN_MODEL = f"Helsinki-NLP/opus-mt-{SOURCE_LANGUAGE}-{MAIN_LANGUAGE}"
+    MAIN_MODEL = (
+        f"Helsinki-NLP/opus-mt-{SOURCE_LANGUAGE}-{MAIN_LANGUAGE}"
+    )
+
+
+TRANSLATION_BASE_LANGUAGE = (
+    MAIN_LANGUAGE
+    if MAIN_LANGUAGE != SOURCE_LANGUAGE
+    else SOURCE_LANGUAGE
+)
 
 OTHER_MODELS = {
-    language: f"Helsinki-NLP/opus-mt-{MAIN_LANGUAGE}-{language}"
+    language: (
+        f"Helsinki-NLP/opus-mt-"
+        f"{TRANSLATION_BASE_LANGUAGE}-{language}"
+    )
     for language in OTHER_LANGUAGES
 }
 

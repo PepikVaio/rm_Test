@@ -47,11 +47,11 @@ Soubory `.qmd`, `.rcc` a `.json` (pokud jsou k dispozici) zkopírujte do `/home/
 <br>
 
 ## Pomoc
-Vytvorte problemy, pokud najdete problem.
+Vytvořte problémy, pokud najdete problém.
 
 > [!NOTE]
 > ### Authors
-> - **Jmeno:** Wajsar Josef  
+> - **Jméno:** Wajsar Josef  
 > - **Email:** [Wajsar.Josef@hotmail.com](mailto:Wajsar.Josef@hotmail.com)
 > ### Poděkování
 > Inspirace, úryvky kódu atd...

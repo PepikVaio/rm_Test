@@ -29,7 +29,7 @@ OTHER_LANGUAGES = [
 
 MAIN_MODEL = f"Helsinki-NLP/opus-mt-{SOURCE_LANGUAGE}-{MAIN_LANGUAGE}"
 OTHER_MODELS = {
-    language: f"Helsinki-NLP/opus-mt-{MAIN_LANGUAGE}-{language}
+    language: f"Helsinki-NLP/opus-mt-{MAIN_LANGUAGE}-{language}"
     for language in OTHER_LANGUAGES
 }
 

@@ -1,4 +1,4 @@
-name: Restore Czech text and translate
+name: Restore text
 
 on:
   push:
@@ -9,16 +9,5 @@ permissions:
   contents: write
 
 jobs:
-  tools:
-    name: Run reMarkable tools
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Run tools
-        uses: PepikVaio/reMarkable_Github_Actions@main
-        with:
-          run_diacritics: true
-          run_translate: true
+  translate:
+    uses: PepikVaio/reMarkable_Github_Actions/.github/workflows/diacritics.yml@main

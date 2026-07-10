@@ -1,9 +1,9 @@
-Dnes jsem šel ráno do práce a přemýšlel jsem o novém projektu. Můj hlavní úkol je připravit jednoduchý plán, který bude obsahovat všechny důležité kroky.
+Dnes jsem sel ráno do práce a premyslel jsem o novem projektu. Muj hlavní ukol je připravit jednoduchý plán, který bude obsahovat všechny dulezite kroky.
 
-Potom jsem si přečetl poznámky z minulého týdne a zjistil jsem, že některé věci potřebují upravit. V dokumentu byly informace o vývoji aplikace, testování funkcí a zlepšení uživatelského prostředí.
+Potom jsem si precetl poznamky z minuleho týdne a zjistil jsem, ze nektere veci potrebuji upravit. V dokumentu byly informace o vyvoji aplikace, testování funkci a zlepšení uzivatelskeho prostředí.
 
-Když jsem dokončil první část práce, udělal jsem kontrolu výsledků. Některé soubory byly staré a bylo potřeba je aktualizovat. Nová verze programu musí být rychlá, stabilní a jednoduchá na použití.
+Když jsem dokoncil první cast práce, udelal jsem kontrolu vysledku. Nektere soubory byly stare a bylo potřeba je aktualizovat. Nova verze programu musí byt rychla, stabilní a jednoducha na použití.
 
-Ve volném čase rád čtu knihy, chodím na procházky a přemýšlím o dalších nápadech. Je důležité mít dobrý systém, který pomáhá udržet pořádek v úlohách a poznámkách.
+Ve volnem case rad ctu knihy, chodim na prochazky a premyslim o dalsich napadech. Je dulezite mit dobrý systém, který pomaha udržet pořádek v ulohach a poznamkach.
 
-Tento text slouží jako test pro automatické doplnění české diakritiky. Očekávám, že výsledek bude vypadat přirozeně a většina slov bude opravena správně.
+Tento text slouzi jako test pro automaticke doplnění ceske diakritiky. Ocekavam, ze výsledek bude vypadat prirozene a většina slov bude opravena spravne.

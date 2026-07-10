@@ -1,3 +1,3 @@
-# C'est le test Fór Github Action.
+# C'est le premier test pour Github Action.
 
-J'ai dit que ça marcherait.
+Je me dis que ça marche.

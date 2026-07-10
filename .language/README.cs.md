@@ -1,3 +1,3 @@
-# Tohle je zkouška Forst Fór Github Action.
+# Tohle je první test pro Github Action.
 
-Já hoep, že to bude fungovat.
+Já hoep, že to funguje.

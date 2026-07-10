@@ -1,3 +1,3 @@
-# Questo è il test fór Github Action.
+# Questo è il primo test per Github Action.
 
-Io suono, che funzionerà.
+Io suono, che funziona.

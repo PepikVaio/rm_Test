@@ -1,3 +1,3 @@
-# Dies ist der forst test fór Github Action.
+# Dies ist der erste Test für Github Action.
 
 Ich hupe, dass es funktioniert.

@@ -24,39 +24,39 @@ Soubory `.qmd`, `.rcc` a `.json` (pokud jsou k dispozici) zkopírujte do `/home/
 > - reMarkable 1/2, reMarkable Paper Pro
 > - [Xovi](https://github.com/asivery/rm-xovi-extensions/tree/master)
 
-> [!TIP]
+[![cs](https://img.shields.io/badge/lang-cs-springgreen.svg)](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/blob/main/.language_cs/README.cs.md)0
 > Doporučuji nainstalovat tento typ rozšíření pro lepší konfiguraci ostatních rozšíření.:
-> - [xovi_Settings_Main](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/xovi_Settings_Main)
+> - [![cs](https://img.shields.io/badge/lang-cs-springgreen.svg)](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/blob/main/.language_cs/README.cs.md)1
 
 
 ### Používání
-* [document_Reader_Mode](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/document_Reader_Mode) - Čtěte bez rušivých elementů a sledujte své statistiky.
-* [document_Multiple_Navigation_History](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/document_Multiple_Navigation_History) - Neomezené možnosti skoku zpět v souborech PDF.
-* [document_Toolbar_X](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/document_Toolbar_X) - Přizpůsobení panelu nástrojů (tlačítko otevřít panel nástrojů a tlačítko zavřít dokument).
+* [![cs](https://img.shields.io/badge/lang-cs-springgreen.svg)](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/blob/main/.language_cs/README.cs.md)2 - Čtěte bez rušivých elementů a sledujte své statistiky.
+* [![cs](https://img.shields.io/badge/lang-cs-springgreen.svg)](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/blob/main/.language_cs/README.cs.md)3 - Neomezené možnosti skoku zpět v souborech PDF.
+* [![cs](https://img.shields.io/badge/lang-cs-springgreen.svg)](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/blob/main/.language_cs/README.cs.md)4 - Přizpůsobení panelu nástrojů (tlačítko otevřít panel nástrojů a tlačítko zavřít dokument).
 
-* [sidebar_Clock](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/sidebar_Clock) - Úžasné hodiny v postranním panelu reMarkable (můžete přidat svátky, speciální dny a počasí).
-* [sidebar_Translated](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/sidebar_Translated) - Částečný překlad postranního panelu do češtiny. Brzy bude dostupná vylepšená verze.
+* [![cs](https://img.shields.io/badge/lang-cs-springgreen.svg)](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/blob/main/.language_cs/README.cs.md)5 - Úžasné hodiny v postranním panelu reMarkable (můžete přidat svátky, speciální dny a počasí).
+* [![cs](https://img.shields.io/badge/lang-cs-springgreen.svg)](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/blob/main/.language_cs/README.cs.md)6 - Částečný překlad postranního panelu do češtiny. Brzy bude dostupná vylepšená verze.
 
-* [system_Light_Sleep](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/system_Light_Sleep) - Okouzlete svůj reMarkable útulným vzkazem na dobrou noc pro lehký režim spánku.
-* [system_Translation](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/system_Translation) - Trocha kouzla a váš reMarkable na vás bude mluvit česky.
+* [![cs](https://img.shields.io/badge/lang-cs-springgreen.svg)](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/blob/main/.language_cs/README.cs.md)7 - Okouzlete svůj reMarkable útulným vzkazem na dobrou noc pro lehký režim spánku.
+* [![cs](https://img.shields.io/badge/lang-cs-springgreen.svg)](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/blob/main/.language_cs/README.cs.md)8 - Trocha kouzla a váš reMarkable na vás bude mluvit česky.
 
-* [toolbar_Expand_Typing](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/toolbar_Expand_Typing) - Rozšířit výběr nástrojů při psaní.
+* [![cs](https://img.shields.io/badge/lang-cs-springgreen.svg)](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/blob/main/.language_cs/README.cs.md)9 - Rozšířit výběr nástrojů při psaní.
 
-* [xovi_Settings_Example](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/xovi_Settings_Example) - Příklad vlastního nastavení k rozšíření `xovi_Settings_Main`.
-* [xovi_Settings_Main](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/xovi_Settings_Main) - Přidejte nastavení do svého rozšíření.
+* [![supported: rM1](https://img.shields.io/badge/rM1-supported-green)](https://remarkable.com/store/remarkable)0 - Příklad vlastního nastavení k rozšíření `xovi_Settings_Main`.
+* [![supported: rM1](https://img.shields.io/badge/rM1-supported-green)](https://remarkable.com/store/remarkable)1 - Přidejte nastavení do svého rozšíření.
 
-<br>
+[![supported: rM1](https://img.shields.io/badge/rM1-supported-green)](https://remarkable.com/store/remarkable)2
 
 ## Pomoc
 Vytvořte problémy, pokud najdete problém.
 
-> [!NOTE]
+[![supported: rM1](https://img.shields.io/badge/rM1-supported-green)](https://remarkable.com/store/remarkable)3
 > ### Authors
 > - **Jméno:** Wajsar Josef  
-> - **Email:** [Wajsar.Josef@hotmail.com](mailto:Wajsar.Josef@hotmail.com)
+> - **Email:** [![supported: rM1](https://img.shields.io/badge/rM1-supported-green)](https://remarkable.com/store/remarkable)4
 > ### Poděkování
 > Inspirace, úryvky kódu atd...
-> - [readme - multi language](https://github.com/jonatasemidio/multilanguage-readme-pattern)
-> - [readme - icons](https://shields.io/)
+> - [![supported: rM1](https://img.shields.io/badge/rM1-supported-green)](https://remarkable.com/store/remarkable)5
+> - [![supported: rM1](https://img.shields.io/badge/rM1-supported-green)](https://remarkable.com/store/remarkable)6
 
 

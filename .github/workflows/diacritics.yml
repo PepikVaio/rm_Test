@@ -11,22 +11,28 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Restore Czech diacritics
+      - name: Restore diacritics
         run: |
           curl \
             --data-urlencode "data@README.md" \
             --data-urlencode "model=czech-diacritics_generator" \
             http://lindat.mff.cuni.cz/services/korektor/api/correct \
-          | python3 -c '
-import sys, json
-print(json.load(sys.stdin)["result"])
-' > README.new.md
+            -o result.json
 
-          mv README.new.md README.md
+          python3 - <<'PY'
+          import json
 
-      - name: Commit changes
+          with open("result.json", encoding="utf-8") as f:
+              data = json.load(f)
+
+          with open("README.md", "w", encoding="utf-8") as f:
+              f.write(data["result"])
+          PY
+
+      - name: Commit result
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

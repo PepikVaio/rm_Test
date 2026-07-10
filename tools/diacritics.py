@@ -19,10 +19,10 @@ def protect_markdown(text):
     global protected
 
     patterns = [
-        r"(?m)^>\s*\[![A-Z]+\].*$",   # > [!TIP]
-        r"(?m)^\[!.*$",               # [![badge]]
-        r"\[[^\]]+\]\([^\)]+\)",       # Markdown odkazy
-        r"<[^>]+>",                    # HTML tagy
+        r"(?m)^>\s*\[!.*?\].*$",   # GitHub alerts
+        r"(?m)^\[!.*$",            # badges
+        r"\[[^\]]+\]\([^\)]+\)",    # Markdown odkazy
+        r"<[^>]+>",                 # HTML tagy
     ]
 
 
@@ -72,6 +72,10 @@ def restore_file(path: Path):
 
     text = path.read_text(encoding="utf-8")
     original = protect_markdown(text)
+
+    print("========== PROTECTED ==========")
+    print(original)
+    print("================================")
 
     response = requests.post(
         API,

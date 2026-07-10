@@ -1,5 +1,6 @@
 from pathlib import Path
 import os
+import subprocess
 import requests
 
 # =========================
@@ -84,24 +85,20 @@ def get_changed_files():
 changed_files = get_changed_files()
 
 if FILE_DEFAULT:
-    # Pouze vybraný soubor, ale jen pokud byl změněn
     files = [
         Path(FILE_DEFAULT)
     ] if Path(FILE_DEFAULT) in changed_files else []
 
 else:
-    # Všechny změněné markdown soubory
     files = [
         file
         for file in changed_files
         if file.suffix == ".md"
     ]
 
-
 if not files:
     print("No files to repair")
     exit(0)
-
 
 for file in files:
     if file.is_file():

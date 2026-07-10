@@ -6,9 +6,6 @@
 [![supported: FW](https://img.shields.io/badge/fw_3.xx-supported-green)]()
 
 
-
-
-
 # Xovi rozšíření!
 > Přizpůsobte si svůj tablet reMarkable pomocí těchto rozšíření.
 > <br>
@@ -50,11 +47,11 @@ Soubory `.qmd`, `.rcc` a `.json` (pokud jsou k dispozici) zkopírujte do `/home/
 <br>
 
 ## Pomoc
-Vytvořte problémy, pokud najdete problém.
+Vytvorte problemy, pokud najdete problem.
 
 > [!NOTE]
 > ### Authors
-> - **Jméno:** Wajsar Josef  
+> - **Jmeno:** Wajsar Josef  
 > - **Email:** [Wajsar.Josef@hotmail.com](mailto:Wajsar.Josef@hotmail.com)
 > ### Poděkování
 > Inspirace, úryvky kódu atd...

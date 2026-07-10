@@ -12,11 +12,12 @@ FILE_DEFAULT = os.environ.get("FILE_DEFAULT", "").strip()
 MODEL = os.environ["DIACRITICS_MODEL"]
 
 
-protected = {}
+
 
 
 def protect_markdown(text):
-    global protected
+
+    protected = {}
 
     patterns = [
         r"(?m)^>\s*\[!.*?\].*$",   # GitHub alerts
@@ -25,14 +26,10 @@ def protect_markdown(text):
         r"<[^>]+>",                 # HTML tagy
     ]
 
-
     counter = 0
 
     for pattern in patterns:
-        matches = re.findall(
-            pattern,
-            text
-        )
+        matches = re.findall(pattern, text)
 
         for match in matches:
             key = f"MARKDOWN_PLACEHOLDER_{counter}"
@@ -47,10 +44,9 @@ def protect_markdown(text):
 
             counter += 1
 
-    return text
+    return text, protected
 
-
-def restore_markdown(text):
+def restore_markdown(text, protected):
 
     for key, value in protected.items():
         text = text.replace(
@@ -72,7 +68,7 @@ def restore_file(path: Path):
     print(f"I am repairing: {path}")
 
     text = path.read_text(encoding="utf-8")
-    original = protect_markdown(text)
+    original, protected = protect_markdown(text)
 
     print("========== PROTECTED ==========")
     print(original)
@@ -90,7 +86,7 @@ def restore_file(path: Path):
     response.raise_for_status()
 
     result = response.json()["result"]
-    result = restore_markdown(result)
+    result = restore_markdown(result, protected)
 
     path.write_text(
         result,

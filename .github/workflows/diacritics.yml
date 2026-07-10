@@ -1,4 +1,4 @@
-name: Restore Czech diacritics
+name: Restore Czech text and translate
 
 on:
   push:
@@ -16,14 +16,19 @@ env:
   # ================================================
   COMMIT_MESSAGE: "Added Czech diacritics"
   FILE_DEFAULT: ""
-  PATH_SCRIPT: tools/diacritics.py
+  PATH_DIACRITICS: tools/diacritics.py
+  PATH_TRANSLATE: tools/translate.py
+
+
+
+
 
 permissions:
   contents: write
 
 jobs:
   main:
-    name: 'Adding diacritics to an *md file'
+    name: 'Restore Czech text and translate'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -39,7 +44,10 @@ jobs:
           pip install requests
       - name: Add diacritics
         run: |
-          python ${{ env.PATH_SCRIPT }}
+          python ${{ env.PATH_DIACRITICS }}
+      - name: Translate to English
+        run: |
+          python ${{ env.PATH_TRANSLATE }}
       - name: Commit result
         run: |
           git config user.name "github-actions[bot]"

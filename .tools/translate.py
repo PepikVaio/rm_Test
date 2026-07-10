@@ -22,13 +22,9 @@ OTHER_OUTPUT_PATH = Path(os.environ["TRANSLATE_OUTPUT_OTHER"])
 OTHER_OUTPUT_PATH.mkdir(parents=True, exist_ok=True)
 
 OTHER_LANGUAGES = [
-    lang for lang in (
-        os.environ["TRANSLATE_OUTPUT_OTHER_LANGUAGE"]
-        .strip("[]")
-        .replace(" ", "")
-        .split(",")
-    )
-    if lang
+    lang.strip()
+    for lang in os.environ["TRANSLATE_OUTPUT_OTHER_LANGUAGE"].split(",")
+    if lang.strip()
 ]
 
 MAIN_MODEL = f"Helsinki-NLP/opus-mt-{SOURCE_LANGUAGE}-{MAIN_LANGUAGE}"

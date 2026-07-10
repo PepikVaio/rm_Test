@@ -21,10 +21,11 @@ def protect_markdown(text):
     counter = 0
 
     pattern = re.compile(
-        r"(?m)^>\s*\[!.*?\].*$"      # GitHub alerts
-        r"|(?m)^\[!\[.*$"            # badges
-        r"|\[[^\]]+\]\([^\)]+\)"      # Markdown odkazy
-        r"|<[^>]+>"                  # HTML tagy
+        r"(?m)"
+        r"^>\s*\[![A-Za-z]+\].*$"  # GitHub alerts
+        r"|^\[!\[.*$"              # badges
+        r"|\[[^\]]+\]\([^\)]+\)"    # Markdown odkazy
+        r"|<[^>]+>"                 # HTML tagy
     )
 
     def replace(match):

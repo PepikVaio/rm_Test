@@ -8,6 +8,7 @@ from transformers import MarianMTModel, MarianTokenizer
 # =========================
 
 SOURCE_FILE = Path(os.environ["TRANSLATE_SOURCE"])
+
 SOURCE_LANGUAGE = os.environ["TRANSLATE_SOURCE_LANGUAGE"]
 
 MAIN_OUTPUT_ENV = os.environ.get("TRANSLATE_OUTPUT_MAIN", "")
@@ -27,7 +28,11 @@ OTHER_LANGUAGES = [
     if lang.strip()
 ]
 
-MAIN_MODEL = f"Helsinki-NLP/opus-mt-{SOURCE_LANGUAGE}-{MAIN_LANGUAGE}"
+MAIN_MODEL = None
+
+if MAIN_LANGUAGE != SOURCE_LANGUAGE:
+    MAIN_MODEL = f"Helsinki-NLP/opus-mt-{SOURCE_LANGUAGE}-{MAIN_LANGUAGE}"
+
 OTHER_MODELS = {
     language: f"Helsinki-NLP/opus-mt-{MAIN_LANGUAGE}-{language}"
     for language in OTHER_LANGUAGES
@@ -186,7 +191,7 @@ text = SOURCE_FILE.read_text(
     encoding="utf-8"
 )
 
-if MAIN_OUTPUT:
+if MAIN_OUTPUT and MAIN_MODEL:
     tokenizer, model = load_model(MAIN_MODEL)
     translated = translate_markdown(text, tokenizer, model)
 
@@ -194,6 +199,8 @@ if MAIN_OUTPUT:
         translated,
         encoding="utf-8"
     )
+
+    text = translated
 
     print(f"Done: {MAIN_OUTPUT}")
 

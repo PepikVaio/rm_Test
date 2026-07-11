@@ -13,7 +13,8 @@
 
 
 
-# Xovi rozšíření!
+
+# Xovi rozšířeni!
 > Přizpůsobte si svůj tablet reMarkable pomocí těchto rozšíření.
 > <br>
 > Tato rozšíření přinášejí větší svobodu do vašeho tabletu reMarkable.  

@@ -6,6 +6,8 @@
 [![supported: FW](https://img.shields.io/badge/fw_3.xx-supported-green)]()
 
 
+
+
 # Estensione Xovi!
 > Personalizza il tuo tablet riMarkable utilizzando queste estensioni.
 > <br>

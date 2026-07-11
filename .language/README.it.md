@@ -1,65 +1,59 @@
-{POSTI DI LAVORO_0}
-{POSTI DI LAVORO_1}
-{POSTI DI LAVORO_2}
-{POSTI DI LAVORO_3}
-{POSTI DI LAVORO_4}
-{POSTI DI LAVORO_5}
+RM_0
+RM_1
+RM_2
+RM_3
+RM_4
+RM_5
 
 
-
-
-
-
-
-
-# Estensione {PLACEHOLEER_6}!
+# Estensione RM_6!
 > Personalizza il tuo tablet riMarkable utilizzando queste estensioni.
-> {POSTI DI LAVORO_7}
+> RM_7
 > Queste estensioni offrono una maggiore libertà al tablet riMarkable.
 - testato - riMarkable 2
 - testato - riMarkable Paper Pro
 
-{POSTI DI LAVORO_8}
+RM_8
 
 ## Installazione
-File `.qmd`, `.rcc` e `.json` (se disponibili) copiano `/home/root/xovi/exthome/qt-resource-rebuilder`.
+Copia i file RM_9, RM_10 e RM_11 (se disponibili) in RM_12.
 
-{POSTI DI LAVORO_13}
+RM_13
 > Prima dell'installazione, assicurarsi di soddisfare tutti i requisiti:
 > - riMarkable 1/2, reMarkable Paper Pro
-> - {POSTI DI LAVORO_15}
+> - RM_15
 
-{POSTI DI LAVORO_16}
+RM_16
 > Raccomando di installare questo tipo di estensione per una migliore configurazione di altre estensioni.:
-> - {POSTI DI LAVORO_17}
+> - RM_17
 
 
 ### Applicazione
-* [document_Reader_Mode](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/document_Reader_Mode) - Leggere senza interferire con gli elementi e seguire le statistiche.
-* [document_Multiple_Navigation_History](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/document_Multiple_Navigation_History) - Opzioni di salto illimitate in file PDF.
-* [document_Toolbar_X](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/document_Toolbar_X) - Personalizza la barra degli strumenti (pulsante per aprire la barra degli strumenti e pulsante per chiudere il documento).
+* RM_18 - Leggi senza interferire con gli elementi e segui le statistiche.
+* RM_19 - Opzioni di salto illimitate in file PDF.
+* RM_20 - Personalizza la barra degli strumenti (pulsante per aprire la barra degli strumenti e pulsante per chiudere il documento).
 
-* [sidebar_Clock](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/sidebar_Clock) - Incredibile orologio nel sidebar riMarkable (è possibile aggiungere vacanze, giorni speciali e tempo).
-* [sidebar_Translated](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/sidebar_Translated) - Traduzione parziale del pannello laterale in ceco. Una versione migliorata sarà presto disponibile.
+* RM_21 - Incredibile orologio nella barra laterale riMarkable (è possibile aggiungere vacanze, giorni speciali e tempo).
+* RM_22 - Traduzione parziale del pannello laterale in ceco. Presto sarà disponibile una versione migliorata.
 
-* [system_Light_Sleep](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/system_Light_Sleep) - Affascinante il tuo reMarkable con una nota piacevole notte accogliente per una leggera modalità di sonno.
-* [system_Translation](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/system_Translation) - Un piccolo incantesimo e il tuo riMarkable vi parlerà ceco.
+* RM_23 - Affascinante il tuo reMarkable con una nota di buona notte accogliente per una leggera modalità di sonno.
+* RM_24 - Un piccolo incantesimo e il tuo riMarkable su di te parlerà ceco.
 
-* [toolbar_Expand_Typing](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/toolbar_Expand_Typing) - Espandi la selezione degli strumenti quando scrivi.
+* RM_25 - Espandere la selezione degli strumenti durante la scrittura.
 
-* [xovi_Settings_Example](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/xovi_Settings_Example) - Esempio di impostazioni personalizzate per l'estensione `xovi_Settings_Main`.
-* [xovi_Settings_Main](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/xovi_Settings_Main) - Aggiungi impostazioni all'estensione.
+* RM_26 - Esempio di impostazione personalizzata per estendere RM_27.
+* RM_28 - Aggiungi impostazioni all'estensione.
 
-{POSTI DI LAVORO_29}
+RM_29
 
 ## Aiuto
 Crea problemi se trovi un problema.
 
-{POSTI DI LAVORO_30}
+RM_30
 > ### Autori
 > - **Nome:** Wajsar Josef
-> - **Email:** [Wajsar.Josef@hotmail.com](mailto:Wajsar.Josef@hotmail.com)
+> - **Email:** RM_31
 ### Grazie
 > Ispirazione, frammenti di codice ecc...
-> - {POSTI DI LAVORO_32}
-> - {POSTI DI LAVORO_33}
+> - RM_32
+> - RM_33

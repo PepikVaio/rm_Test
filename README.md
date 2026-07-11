@@ -1,59 +1,59 @@
-RM_0
-RM_1
-RM_2
-RM_3
-RM_4
-RM_5
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/PepikVaio/reMarkable_Xovi_Extensions)
+[![cs](https://img.shields.io/badge/lang-cs-springgreen.svg)](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/blob/main/.language_cs/README.cs.md)
+[![supported: rM1](https://img.shields.io/badge/rM1-supported-green)](https://remarkable.com/store/remarkable)
+[![supported: rM2](https://img.shields.io/badge/rM2-supported-green)](https://remarkable.com/store/remarkable-2)
+[![supported: rmPP](https://img.shields.io/badge/rmPP-supported-blue)](https://remarkable.com/store/remarkable-paper/pro)
+[![supported: FW](https://img.shields.io/badge/fw_3.xx-supported-green)]()
 
 
-# RM_6 extension!
+# Xovi extension!
 > Customize your reMarkable tablet using these extensions.
-> RM_7
+> <br>
 > These extensions bring greater freedom to your reMarkable tablet.
 - tested - reMarkable 2
 - tested - reMarkable Paper Pro
 
-RM_8
+<br>
 
 ## Installation
-Copy RM_9, RM_10 and RM_11 files (if available) to RM_12.
+Copy `.qmd`, `.rcc` and `.json` files (if available) to `/home/root/xovi/exthome/qt-resource-rebuilder`.
 
-RM_13
+> [!IMPORTANT]
 > Before installation, make sure you meet all requirements:
 > - reMarkable 1/2, reMarkable Paper Pro
-> - RM_15
+> - [Xovi](https://github.com/asivery/rm-xovi-extensions/tree/master)
 
-RM_16
+> [!TIP]
 > I recommend installing this extension type for better configuration of other extensions.:
-> - RM_17
+> - [xovi_Settings_Main](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/xovi_Settings_Main)
 
 
 ### Application
-* RM_18 - Read without interfering elements and follow your statistics.
-* RM_19 - Unlimited jump options back in PDF files.
-* RM_20 - Customize toolbar (button to open toolbar and button to close document).
+* [document_Reader_Mode](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/document_Reader_Mode) - Read without interfering elements and follow your statistics.
+* [document_Multiple_Navigation_History](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/document_Multiple_Navigation_History) - Unlimited jump options back in PDF files.
+* [document_Toolbar_X](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/document_Toolbar_X) - Customize toolbar (button to open toolbar and button to close document).
 
-* RM_21 - Amazing clock in the sidebar reMarkable (you can add holidays, special days and weather).
-* RM_22 - Partial translation of the side panel into Czech. An improved version will soon be available.
+* [sidebar_Clock](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/sidebar_Clock) - Amazing clock in the sidebar reMarkable (you can add holidays, special days and weather).
+* [sidebar_Translated](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/sidebar_Translated) - Partial translation of the side panel into Czech. An improved version will soon be available.
 
-* RM_23 - Charming your reMarkable with a cozy good night note for a light sleep mode.
-* RM_24 - A little spell and your reMarkable on you will speak Czech.
+* [system_Light_Sleep](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/system_Light_Sleep) - Charming your reMarkable with a cozy good night note for a light sleep mode.
+* [system_Translation](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/system_Translation) - A little spell and your reMarkable will speak to you Czech.
 
-* RM_25 - Expand tool selection when writing.
+* [toolbar_Expand_Typing](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/toolbar_Expand_Typing) - Expand tool selection when writing.
 
-* RM_26 - Example of custom setting to extend RM_27.
-* RM_28 - Add settings to your extension.
+* [xovi_Settings_Example](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/xovi_Settings_Example) - Example of custom settings for `xovi_Settings_Main` extension.
+* [xovi_Settings_Main](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/xovi_Settings_Main) - Add settings to your extension.
 
-RM_29
+<br>
 
 ## Help
 Create problems if you find a problem.
 
-RM_30
+> [!NOTE]
 > ### Authors
 > - **Name:** Wajsar Josef
-> - **Email:** RM_31
+> - **Email:** [Wajsar.Josef@hotmail.com](mailto:Wajsar.Josef@hotmail.com)
 > ### Thanks
 > Inspiration, snips of code etc...
-> - RM_32
-> - RM_33
+> - [readme - multi language](https://github.com/jonatasemidio/multilanguage-readme-pattern)
+> - [readme - icons](https://shields.io/)

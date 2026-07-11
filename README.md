@@ -5,16 +5,7 @@
 [![supported: rmPP](https://img.shields.io/badge/rmPP-supported-blue)](https://remarkable.com/store/remarkable-paper/pro)
 [![supported: FW](https://img.shields.io/badge/fw_3.xx-supported-green)]()
 
-
-
-
-
-
-
-
-
-
-# Xovi extended!
+# Xovi extension!
 > Customize your reMarkable tablet using these extensions.
 > <br>
 > These extensions bring greater freedom to your reMarkable tablet.

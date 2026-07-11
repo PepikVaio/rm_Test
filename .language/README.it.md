@@ -5,16 +5,7 @@
 [![supported: rmPP](https://img.shields.io/badge/rmPP-supported-blue)](https://remarkable.com/store/remarkable-paper/pro)
 [![supported: FW](https://img.shields.io/badge/fw_3.xx-supported-green)]()
 
-
-
-
-
-
-
-
-
-
-# Xovi esteso!
+# Estensione Xovi!
 > Personalizza il tuo tablet riMarkable utilizzando queste estensioni.
 > <br>
 > Queste estensioni offrono una maggiore libertà al tablet riMarkable.

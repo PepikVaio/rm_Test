@@ -12,7 +12,7 @@
 <br>
 
 > [!CAUTION]
-> **Tato licence obsahuje nasledujici prvky:**
+> **Tato licence obsahuje následující prvky:**
 > - `BY` – Je nutné uvést autora a původní zdroj..
 > - `NC` – Pouze nekomerční využití.
 > - `SÁ` – Odvozená díla musí být sdílena pod stejnou licencí.

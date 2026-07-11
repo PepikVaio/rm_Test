@@ -6,7 +6,8 @@
 [![supported: FW](https://img.shields.io/badge/fw_3.xx-supported-green)]()
 
 
-# Xovi rozšírení!
+
+# Xovi rozsireni!
 > Přizpůsobte si svůj tablet reMarkable pomocí těchto rozšíření.
 > <br>
 > Tato rozšíření přinášejí větší svobodu do vašeho tabletu reMarkable.  

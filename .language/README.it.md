@@ -28,6 +28,9 @@ Copiare i file `.qmd`, `.rcc` e `.json` (se disponibili) in `/home/root/xovi/ext
 > - [xovi_Settings_Main](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/xovi_Settings_Main)
 
 
+
+
+
 ### Applicazione
 * [document_Reader_Mode](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/document_Reader_Mode) - Leggi senza interferire con gli elementi e segui le statistiche.
 * [document_Multiple_Navigation_History](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/document_Multiple_Navigation_History) - Opzioni di salto illimitate in file PDF.

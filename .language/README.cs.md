@@ -6,10 +6,11 @@
 [![supported: FW](https://img.shields.io/badge/fw_3.xx-supported-green)]()
 
 
-# Xovi rozšíření!
-> Přizpůsobte si svůj tablet reMarkable pomocí těchto rozšíření.
+
+# Xovi rozsireni!
+> Přizpůsobte si svůj tablet reMarkable pomocí těchto rozsireni.
 > <br>
-> Tato rozšíření přinášejí větší svobodu do vašeho tabletu reMarkable.  
+> Tato rozsireni přinášejí větší svobodu do vašeho tabletu reMarkable.  
 - testováno - reMarkable 2
 - testováno - reMarkable Paper Pro
 
@@ -24,7 +25,7 @@ Soubory `.qmd`, `.rcc` a `.json` (pokud jsou k dispozici) zkopírujte do `/home/
 > - [Xovi](https://github.com/asivery/rm-xovi-extensions/tree/master)
 
 > [!TIP]
-> Doporučuji nainstalovat tento typ rozšíření pro lepší konfiguraci ostatních rozšíření.:
+> Doporučuji nainstalovat tento typ rozsireni pro lepší konfiguraci ostatních rozsireni.:
 > - [xovi_Settings_Main](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/xovi_Settings_Main)
 
 
@@ -44,8 +45,8 @@ Soubory `.qmd`, `.rcc` a `.json` (pokud jsou k dispozici) zkopírujte do `/home/
 
 * [toolbar_Expand_Typing](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/toolbar_Expand_Typing) - Rozšířit výběr nástrojů při psaní.
 
-* [xovi_Settings_Example](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/xovi_Settings_Example) - Příklad vlastního nastavení k rozšíření `xovi_Settings_Main`.
-* [xovi_Settings_Main](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/xovi_Settings_Main) - Přidejte nastavení do svého rozšíření.
+* [xovi_Settings_Example](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/xovi_Settings_Example) - Příklad vlastního nastavení k rozsireni `xovi_Settings_Main`.
+* [xovi_Settings_Main](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/xovi_Settings_Main) - Přidejte nastavení do svého rozsireni.
 
 <br>
 

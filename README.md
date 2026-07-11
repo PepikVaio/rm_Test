@@ -5,6 +5,7 @@
 [![supported: rmPP](https://img.shields.io/badge/rmPP-supported-blue)](https://remarkable.com/store/remarkable-paper/pro)
 [![supported: FW](https://img.shields.io/badge/fw_3.xx-supported-green)]()
 
+
 # Xovi extension!
 > Customize your reMarkable tablet with these extensions.
 > <br>
@@ -25,6 +26,7 @@ Copy `.qmd`, `.rcc` and `.json` files (if available) to `/home/root/xovi/exthome
 > [!TIP]
 > I recommend installing this extension type for better configuration of other extensions.:
 > - [xovi_Settings_Main](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/xovi_Settings_Main)
+
 
 ### Application
 * [document_Reader_Mode](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/document_Reader_Mode) - Read without interfering elements and follow your statistics.

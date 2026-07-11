@@ -1,61 +1,57 @@
-# VAR_8a6ee209 #
-# VAR_5cd6356e #
-♪ VAR_21e47e0e ♪
-# VAR_8c83fb24 #
-# VAR_5b3e9b63 #
-(VAR_8f3f2093)
+#bb85622f¤
+# Ea122885#
+Ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi!
+©¤6ed9eec1¤©
+# bb4af461#
+#7f2a3438#
 
-# ♪ VAR_8df25c90 ♪ rozsireni!
-> Personalizza il tablet con VAR_fb561415.
-> ©VAR_44fe1861©
-> Queste dispersioni conferiscono maggiore libertà alla compressa ©VAR_97587fa1 ©.
-- Tested - VAR_058edcb0 2
-- Tested - ©VAR_a6630f82© Paper Pro
+# Estensione!
+> Personalizza la tua compressa con l'aiuto di queste estensioni.
+> {¤22067b60¤}
+> Queste estensioni conferiscono una maggiore libertà alla compressa ©¤3f1e577b¤©.
+- testato - ©¤f46a5639¤ © 2
+- testato - ©¤4bfebf71¤© Paper Pro
 
-(VAR_109ec2b)
+#3e7083cb#
 
 ## Installazione
-File ©VAR_b1b4613a ©VAR_c9c4d71b ©VAR_8644ed9c (se disponibile) copia in VAR_ad424f49.
+Copiare i file (se disponibili) in ¤fce7450b¤.
 
-# VAR_f73bfce4 #
+Ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi!
 > Prima dell'installazione, assicurarsi di soddisfare tutti i requisiti:
-> - ©VAR_aecb7e92 © 1©VAR_c2e4870c , ©VAR_d3dd3dea © Paper Pro
-> - VAR_445adc61©
+> - ©¤6b14ecb1¤© 1¤d2d0892a¤©, ©¤62058490¤© Paper Pro
+> - #42c16fc6¤
 
-(VAR_32c7c55c)
-> Suggerisco di installare questo tipo di dispersione per una migliore configurazione di altre dispersioni.:
-> - VAR_67f5700e
-
-
-
-
+Ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi, ehi!
+> Raccomando di installare questo tipo di estensione per una migliore configurazione di altre estensioni.:
+> - ©¤12b5a5b3¤
 
 ### Applicazione
-* ©VAR_3e5f568a - Leggi senza interferire con gli elementi e segui le statistiche.
-* ©VAR_40267eef© - Possibilità illimitate di tornare in file PDF.
-* {VAR_2875e17f} - Personalizza la barra degli strumenti (pulsante per aprire la barra degli strumenti e pulsante per chiudere il documento).
+* ##d00f257b¤ - Leggi senza elementi disturbanti e segui le tue statistiche.
+##############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
+* ©¤68a80e2f¤© - Personalizza la barra degli strumenti (pulsante per aprire la barra degli strumenti e pulsante per chiudere il documento).
 
-* {VAR_be5f2cc4} - Incredibile orologio nel pannello laterale {VAR_5f410a95} (è possibile aggiungere vacanze, giorni speciali e tempo).
-* ©VAR_64c1cae4© - Traduzione parziale del pannello laterale in ceco. Una versione migliorata sarà presto disponibile.
+* ©¤8c8a147ań - Ore impressionanti nel pannello laterale ©¤44a6b0cań (è possibile aggiungere vacanze, giorni speciali e tempo).
+* ©¤09fd3740¤© - Traduzione parziale del pannello laterale in ceco. Una versione migliorata sarà presto disponibile.
 
-* {VAR_562d6490} - Affascinante il tuo {VAR_8501e431} con un accogliente biglietto di buona notte per una leggera modalità di sonno.
-* ©VAR_1408d9e8 - Un po' di magia e il vostro ©VAR_557b5508© vi parlerà ceco.
+# # bye by bye by bye by bye by bye by bye by bye by bye by bye by bye by bye by bye by bye by bye by bye by bye by bye by bye by bye bye by bye bye bye by bye by bye by bye by bye by bye by bye by by bye by by by bye by by bye by bye by bye by bye bye bye bye bye bye bye bye bye bye bye bye bye by bye bye by bye by bye by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by by
+E' stato un piacere conoscerla.
 
-* {VAR_70713cda} - Espande la scelta degli strumenti durante la scrittura.
+* ©¤3608c8cc¤© - Espandere la scelta degli strumenti quando si scrive.
 
-* ©VAR_261c78e4 © - Esempio di autoimpostazione per la distribuzione di VAR_965a6c31.
-* (VAR_1f3ed88f) - Aggiungi impostazioni al tuo rozsireni.
+* #689ea5f1¤ # - Esempio di impostazione personalizzata per estendere ¤c7f5033d #.
+* ©¤79d17069¤ - Aggiungi impostazioni alla tua estensione.
 
-# VAR_996bbda5 #
+# C2635f54#
 
 ## Aiuto
 Crea problemi se trovi un problema.
 
-VAR_d6b3ff06
+# 0ab38601#
 > ### Autori
 > - **Nome:** Wajsar Josef
-> - **Email:*** ©VAR_24edde49©
+> - **Email:*** ©¤1b553ce0¤©
 ### Grazie
 > Ispirazione, frammenti di codice ecc...
-> - VAR_a34f4044
-> - VAR_c4ef0dcb
+> - ©¤4e9199a6¤
+> - ©¤e1fd9654¤

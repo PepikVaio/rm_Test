@@ -5,7 +5,7 @@
 ## Creative Commons Uveďte původ - Neužívejte dílo komerčně - Zachovejte licenci 4.0
 
 > [!NOTE]
-> Toto dilo je chráněno autorským právem a je licencováno pod mezinárodní licenci CC BY-NC-SA 4.0.
+> Toto dílo je chráněno autorským právem a je licencováno pod mezinárodní licenci CC BY-NC-SA 4.0.
 > <br>
 > Můžete kopírovat, šířit, upravovat, přizpůsobovat a vytvářet odvozená díla pouze pro nekomerční účely, a to za následujících podmínek.
 

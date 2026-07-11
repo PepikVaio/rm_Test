@@ -13,7 +13,8 @@
 
 
 
-# Xovi extension!
+
+# Xovi extended!
 > Customize your reMarkable tablet using these extensions.
 > <br>
 > These extensions bring greater freedom to your reMarkable tablet.

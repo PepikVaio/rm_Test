@@ -13,7 +13,8 @@
 
 
 
-# Estensione Xovi!
+
+# Xovi esteso!
 > Personalizza il tuo tablet riMarkable utilizzando queste estensioni.
 > <br>
 > Queste estensioni offrono una maggiore libertà al tablet riMarkable.

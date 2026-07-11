@@ -5,6 +5,7 @@
 [![supported: rmPP](https://img.shields.io/badge/rmPP-supported-blue)](https://remarkable.com/store/remarkable-paper/pro)
 [![supported: FW](https://img.shields.io/badge/fw_3.xx-supported-green)]()
 
+
 # Xovi rozšíření!
 > Přizpůsobte si svůj tablet reMarkable pomocí těchto rozšíření.
 > <br>
@@ -25,6 +26,7 @@ Soubory `.qmd`, `.rcc` a `.json` (pokud jsou k dispozici) zkopírujte do `/home/
 > [!TIP]
 > Doporučuji nainstalovat tento typ rozšíření pro lepší konfiguraci ostatních rozšíření.:
 > - [xovi_Settings_Main](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/xovi_Settings_Main)
+
 
 ### Používání
 * [document_Reader_Mode](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/document_Reader_Mode) - Čtěte bez rušivých elementů a sledujte své statistiky.

@@ -5,9 +5,9 @@
 ## Creative Commons Uveďte původ-Neužívejte dílo komerčně-Zachovejte licenci 4.0
 
 > [!NOTE]
-> Toto dilo je chranrno autorskym pravem a je licencovano pod mezinárodni licenci CC BY-NC-SA 4.0.
+> Toto dílo je chranrno autorským právem a je licencováno pod mezinárodní licenci CC BY-NC-SA 4.0.
 > <br>
-> Muzete kopirovat, sirit, upravovat, prizpusobovat a vytvaret odvozená dila pouze pro nekomercni ucely, a to za nasledujicich podminek.
+> Můžete kopírovat, šířit, upravovat, přizpůsobovat a vytvářet odvozená díla pouze pro nekomerční účely, a to za následujících podmínek.
 
 <br>
 
@@ -15,6 +15,6 @@
 > **Tato licence obsahuje následující prvky:**
 > - `BY` – Je nutné uvést autora a původní zdroj..
 > - `NC` – Pouze nekomerční využití.
-> - `SA` – Odvozená díla musí být sdílena pod stejnou licencí.
+> - `SÁ` – Odvozená díla musí být sdílena pod stejnou licencí.
 
 [![cs](https://img.shields.io/badge/details-cs-springgreen.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.cs)

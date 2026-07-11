@@ -10,5 +10,5 @@ Tento projekt je poskytován "tak, jak je", a bez jakýchkoliv záruk, explicitn
 <br>
 
 > [!WARNING]
-> ## Doporuceni
+> ## Doporučení
 > Důrazně doporučujeme provést vlastní bezpečnostní audit a přijmout vhodná bezpečnostní opatření podle vašich konkrétních potřeb a rizik. Přestože se snažíme udržovat vysokou úroveň bezpečnosti projektu, nemůžeme garantovat bezpečnost ve všech situacích nebo prostřednictvím všech konfigurací.

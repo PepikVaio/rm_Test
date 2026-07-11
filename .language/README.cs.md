@@ -28,7 +28,7 @@ Soubory `.qmd`, `.rcc` a `.json` (pokud jsou k dispozici) zkopírujte do `/home/
 > - [xovi_Settings_Main](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/xovi_Settings_Main)
 
 
-### Pouzivani
+### Používání
 * [document_Reader_Mode](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/document_Reader_Mode) - Čtěte bez rušivých elementů a sledujte své statistiky.
 * [document_Multiple_Navigation_History](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/document_Multiple_Navigation_History) - Neomezené možnosti skoku zpět v souborech PDF.
 * [document_Toolbar_X](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/document_Toolbar_X) - Přizpůsobení panelu nástrojů (tlačítko otevřít panel nástrojů a tlačítko zavřít dokument).

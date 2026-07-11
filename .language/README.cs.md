@@ -9,8 +9,8 @@
 > Přizpůsobte si svůj tablet reMarkable pomocí těchto rozsireni.
 > <br>
 > Tato rozsireni přinášejí větší svobodu do vašeho tabletu reMarkable.  
-- testovano - reMarkable 2
-- testovano - reMarkable Paper Pro
+- testováno - reMarkable 2
+- testováno - reMarkable Paper Pro
 
 <br>
 
@@ -25,10 +25,6 @@ Soubory `.qmd`, `.rcc` a `.json` (pokud jsou k dispozici) zkopírujte do `/home/
 > [!TIP]
 > Doporučuji nainstalovat tento typ rozsireni pro lepší konfiguraci ostatních rozsireni.:
 > - [xovi_Settings_Main](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/xovi_Settings_Main)
-
-
-
-
 
 ### Používání
 * [document_Reader_Mode](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/document_Reader_Mode) - Čtěte bez rušivých elementů a sledujte své statistiky.

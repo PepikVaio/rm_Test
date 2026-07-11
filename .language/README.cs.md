@@ -6,12 +6,6 @@
 [![supported: FW](https://img.shields.io/badge/fw_3.xx-supported-green)]()
 
 
-
-
-
-
-
-
 # Xovi rozšíření!
 > Přizpůsobte si svůj tablet reMarkable pomocí těchto rozšíření.
 > <br>

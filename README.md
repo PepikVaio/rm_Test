@@ -11,6 +11,7 @@
 
 
 
+
 # Xovi extension!
 > Customize your reMarkable tablet using these extensions.
 > <br>
@@ -38,15 +39,15 @@ Files `.qmd`, `.rcc` and `.json` (if available) copy to `/home/root/xovi/exthome
 * [document_Multiple_Navigation_History](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/document_Multiple_Navigation_History) - Unlimited jump options back in PDF files.
 * [document_Toolbar_X](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/document_Toolbar_X) - Customize toolbar (button to open toolbar and button to close document).
 
-* [sidebar_Clock](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/sidebar_Clock) - Awesome clock in the sidebar reMarkable (you can add holidays, special days and weather).
+* [sidebar_Clock](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/sidebar_Clock) - Amazing clock in the sidebar reMarkable (you can add holidays, special days and weather).
 * [sidebar_Translated](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/sidebar_Translated) - Partial translation of the side panel into Czech. An improved version will soon be available.
 
 * [system_Light_Sleep](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/system_Light_Sleep) - Charming your reMarkable with a cozy good night note for a light sleep mode.
-* [system_Translation](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/system_Translation) - A little spell and your reMarkable on you will speak Czech.
+* [system_Translation](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/system_Translation) - A little spell and your reMarkable will speak to you Czech.
 
 * [toolbar_Expand_Typing](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/toolbar_Expand_Typing) - Expand tool selection when writing.
 
-* [xovi_Settings_Example](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/xovi_Settings_Example) - Example of custom setting to extend `xovi_Settings_Main`.
+* [xovi_Settings_Example](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/xovi_Settings_Example) - Example of custom settings for extension `xovi_Settings_Main`.
 * [xovi_Settings_Main](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/xovi_Settings_Main) - Add settings to your extension.
 
 <br>

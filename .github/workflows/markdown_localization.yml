@@ -10,4 +10,4 @@ permissions:
 
 jobs:
   restore:
-    uses: PepikVaio/reMarkable_Github_Actions/.github/workflows/diacritics.yml@main
+    uses: PepikVaio/reMarkable_Github_Actions/.github/workflows/markdown_localization.yml@main

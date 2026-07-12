@@ -1,6 +1,5 @@
-Test nastavení, a budu sledovat, zda se doplní diakritika do textu nebo ne.
-Myslím, že by měla ale nejsem si jistý.
-Mělo by to být rychle protože zkouším vypnout překlad, chci jen diakritiku.
+# Posledni uprava, pred tim nez si reknu DONE
+> jsem zvedavy jak se s tim Github popere
 
 Markdown Cheat Sheet
 

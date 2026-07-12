@@ -1,12 +1,3 @@
-Upravený soubor na reMarkable a poslány zpět na github, kde se mi o zbytek postará Github akce.
-> doplní diakritiku
-> vytvoří ostatní jazyky
-> - ještě jeden test, měl jsem špatně cestu ke spuštění akce na github
-
-> Poslední úprava ale tentokrát to dělám na pc, abych nemusel opět restartovat reMarkable.
-> Chtělo by to vyřešit ten problém s restartem, protože to je neskutečně naprd.
-> Také nevím, jak se mám dosta ze souboru, protože na reMarkable 2 není `ecp` na reMarkable Paper Pro ta klávesa je.
-
 Markdown Cheat Sheet
 
 Praktická pomůcka pro tvorbu dokumentace v Markdownu (GitHub README, návody, poznámky).

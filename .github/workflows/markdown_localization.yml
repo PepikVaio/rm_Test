@@ -11,3 +11,5 @@ permissions:
 jobs:
   restore:
     uses: PepikVaio/reMarkable_Github_Actions/.github/workflows/markdown_localization.yml@main
+    with:
+      config_file: .tools/markdown_config.conf

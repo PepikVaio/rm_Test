@@ -1,4 +1,4 @@
-# Poslední úprava, před tím než si řeknu Hotovo
+# Posledni uprava
 > jsem zvědavý jak se s tím Github popere
 
 

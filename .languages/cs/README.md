@@ -1,3 +1,6 @@
+Test nastaveni, a budu sledovat, zda se doplni diakritika do textu nebo ne.
+Myslim, ze by mela ale nejsem si jisty.
+Melo by to byt rychle protoze zkousim vypnout preklad, chci jen diakritiku.
 
 Markdown Cheat Sheet
 

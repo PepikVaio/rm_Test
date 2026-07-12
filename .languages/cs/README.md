@@ -1,4 +1,4 @@
-# Posledni uprava
+# Poslední úprava
 > jsem zvědavý jak se s tím Github popere
 
 

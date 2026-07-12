@@ -1,6 +1,7 @@
 # Posledni uprava, pred tim nez si reknu Hotovo
 > jsem zvedavy jak se s tim Github popere
 
+
 Markdown Cheat Sheet
 
 Praktická pomůcka pro tvorbu dokumentace v Markdownu (GitHub README, návody, poznámky).

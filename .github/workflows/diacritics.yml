@@ -1,4 +1,4 @@
-name: Restore Czech text and translate
+name: Restore text and translate Markdown documentation
 
 on:
   push:

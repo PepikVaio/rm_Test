@@ -1,59 +1,342 @@
-[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/PepikVaio/reMarkable_Xovi_Extensions)
-[![cs](https://img.shields.io/badge/lang-cs-springgreen.svg)](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/blob/main/.language_cs/README.cs.md)
-[![supported: rM1](https://img.shields.io/badge/rM1-supported-green)](https://remarkable.com/store/remarkable)
-[![supported: rM2](https://img.shields.io/badge/rM2-supported-green)](https://remarkable.com/store/remarkable-2)
-[![supported: rmPP](https://img.shields.io/badge/rmPP-supported-blue)](https://remarkable.com/store/remarkable-paper/pro)
-[![supported: FW](https://img.shields.io/badge/fw_3.xx-supported-green)]()
+Markdown Cheat Sheet
 
+Praktická pomůcka pro tvorbu dokumentace v Markdownu (GitHub README, návody, poznámky).
 
-# Xovi rozšíření!
-> Přizpůsobte si svůj tablet reMarkable pomocí těchto rozšíření.
-> <br>
-> Tato rozšíření přinášejí větší svobodu do vašeho tabletu reMarkable.  
-- testováno - reMarkable 2
-- testováno - reMarkable Paper Pro
+⸻
 
-<br>
+Nadpisy
 
-## Instalace
-Soubory `.qmd`, `.rcc` a `.json` (pokud jsou k dispozici) zkopírujte do `/home/root/xovi/exthome/qt-resource-rebuilder`.
+# Nadpis 1
+## Nadpis 2
+### Nadpis 3
 
-> [!IMPORTANT]
-> Před instalací se ujistěte, že splňujete všechny požadavky:
-> - reMarkable 1/2, reMarkable Paper Pro
-> - [Xovi](https://github.com/asivery/rm-xovi-extensions/tree/master)
+Výsledek:
 
-> [!TIP]
-> Doporučuji nainstalovat tento typ rozšíření pro lepší konfiguraci ostatních rozšíření.:
-> - [xovi_Settings_Main](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/xovi_Settings_Main)
+Nadpis 1
 
+Nadpis 2
 
-### Používání
-* [document_Reader_Mode](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/document_Reader_Mode) - Čtěte bez rušivých elementů a sledujte své statistiky.
-* [document_Multiple_Navigation_History](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/document_Multiple_Navigation_History) - Neomezené možnosti skoku zpět v souborech PDF.
-* [document_Toolbar_X](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/document_Toolbar_X) - Přizpůsobení panelu nástrojů (tlačítko otevřít panel nástrojů a tlačítko zavřít dokument).
+Nadpis 3
 
-* [sidebar_Clock](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/sidebar_Clock) - Úžasné hodiny v postranním panelu reMarkable (můžete přidat svátky, speciální dny a počasí).
-* [sidebar_Translated](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/sidebar_Translated) - Částečný překlad postranního panelu do češtiny. Brzy bude dostupná vylepšená verze.
+⸻
 
-* [system_Light_Sleep](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/system_Light_Sleep) - Okouzlete svůj reMarkable útulným vzkazem na dobrou noc pro lehký režim spánku.
-* [system_Translation](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/system_Translation) - Trocha kouzla a váš reMarkable na vás bude mluvit česky.
+Text
 
-* [toolbar_Expand_Typing](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/toolbar_Expand_Typing) - Rozšířit výběr nástrojů při psaní.
+Tučný text
 
-* [xovi_Settings_Example](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/xovi_Settings_Example) - Příklad vlastního nastavení k rozšíření `xovi_Settings_Main`.
-* [xovi_Settings_Main](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/tree/main/xovi_Settings_Main) - Přidejte nastavení do svého rozšíření.
+**tučný text**
 
-<br>
+Výsledek:
 
-## Pomoc
-Vytvořte problémy, pokud najdete problém.
+tučný text
+
+⸻
+
+Kurzíva
+
+*šikmý text*
+
+Výsledek:
+
+šikmý text
+
+⸻
+
+Tučný + kurzíva
+
+***důležitý text***
+
+Výsledek:
+
+důležitý text
+
+⸻
+
+Seznamy
+
+Nečíslovaný seznam
+
+- položka
+- další položka
+  - pod položka
+
+Výsledek:
+
+* položka
+* další položka
+    * pod položka
+
+⸻
+
+Číslovaný seznam
+
+1. První krok
+2. Druhý krok
+3. Třetí krok
+
+Výsledek:
+
+1. První krok
+2. Druhý krok
+3. Třetí krok
+
+⸻
+
+Úkoly
+
+- [ ] Nehotovo
+- [x] Hotovo
+
+Výsledek:
+
+* Nehotovo
+* Hotovo
+
+⸻
+
+Poznámky a upozornění
+
+Citace
+
+> Toto je poznámka.
+
+Výsledek:
+
+Toto je poznámka.
+
+⸻
+
+GitHub Alerts
 
 > [!NOTE]
-> ### Authors
-> - **Jméno:** Wajsar Josef  
-> - **Email:** [Wajsar.Josef@hotmail.com](mailto:Wajsar.Josef@hotmail.com)
-> ### Poděkování
-> Inspirace, úryvky kódu atd...
-> - [readme - multi language](https://github.com/jonatasemidio/multilanguage-readme-pattern)
-> - [readme - icons](https://shields.io/)
+> Doplňující informace.
+> [!TIP]
+> Užitečný tip.
+> [!IMPORTANT]
+> Důležitá informace.
+> [!WARNING]
+> Pozor na tuto část.
+> [!CAUTION]
+> Nebezpečná operace.
+
+⸻
+
+Odkazy
+
+[GitHub](https://github.com)
+
+Výsledek:
+
+GitHub
+
+⸻
+
+Obrázky
+
+![Popis obrázku](image.png)
+
+⸻
+
+Kód
+
+Inline kód
+
+Použij příkaz `git pull`.
+
+Výsledek:
+
+Použij příkaz git pull.
+
+⸻
+
+Blok kódu
+
+```bash
+git clone https://github.com/user/project.git
+```
+
+Výsledek:
+
+git clone https://github.com/user/project.git
+
+Podporované jazyky:
+
+bash
+python
+javascript
+qml
+json
+yaml
+xml
+html
+css
+cpp
+csharp
+
+⸻
+
+Tabulky
+
+| Název | Popis |
+|---|---|
+| QML | UI jazyk |
+| Python | Skripty |
+
+Výsledek:
+
+Název	Popis
+QML	UI jazyk
+Python	Skripty
+
+⸻
+
+Oddělovač
+
+---
+
+Výsledek:
+
+⸻
+
+Emoji
+
+:white_check_mark:
+:x:
+:warning:
+:rocket:
+
+Výsledek:
+
+:white_check_mark:
+:x:
+:warning:
+:rocket:
+
+⸻
+
+HTML v Markdownu
+
+Markdown umožňuje použít HTML.
+
+<div align="center">
+Text uprostřed
+</div>
+
+⸻
+
+Sbalovací sekce
+
+<details>
+<summary>Klikni pro rozbalení</summary>
+Skrytý obsah.
+</details>
+
+Výsledek:
+
+<details>
+<summary>Klikni pro rozbalení</summary>
+
+Skrytý obsah.
+
+</details>
+
+⸻
+
+Klávesy
+
+Stiskni <kbd>Ctrl</kbd> + <kbd>C</kbd>
+
+Výsledek:
+
+Stiskni Ctrl + C
+
+⸻
+
+Badge
+
+![Build](https://img.shields.io/badge/build-passing-green)
+![Version](https://img.shields.io/badge/version-1.0-blue)
+
+⸻
+
+Komentář (není vidět)
+
+<!-- Toto GitHub nezobrazí -->
+
+⸻
+
+Escape znaků
+
+Pokud chceš zobrazit Markdown znak:
+
+\*
+\#
+\_
+
+Výsledek:
+
+*
+#
+_
+
+⸻
+
+Doporučená struktura README
+
+# Název projektu
+Krátký popis projektu.
+> [!NOTE]
+> Doplňující informace.
+> [!TIP]
+> Užitečný tip.
+## Instalace
+```bash
+příkaz
+
+Použití
+
+Popis použití.
+
+Funkce
+
+* Funkce 1
+* Funkce 2
+
+Stav projektu
+
+* Hotovo
+* Plánováno
+
+Licence
+
+Informace o licenci.
+
+---
+# Nejčastěji používané prvky
+```md
+# Nadpis
+> [!NOTE]
+> Poznámka
+> [!TIP]
+> Tip
+> [!WARNING]
+> Varování
+- seznam
+- [ ] úkol
+- [x] hotovo
+`kód`
+```bash
+příkaz
+
+Tabulka	Hodnota
+
+<details>
+<summary>Více informací</summary>
+
+Text
+
+</details>
+```
+:::
+
+Můžeš ho použít jako interní dokumentaci k tvému markdown-localization.yml projektu nebo ho přidat přímo do repozitáře jako pomůcku pro přispěvatele.

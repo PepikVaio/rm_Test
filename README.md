@@ -3,6 +3,9 @@ Edited file on reMarkable and sent back to github, where I will take care of the
 > creates other languages
 > - one more test, I had the wrong way to run the github action
 
+> Last edit but this time I do it on pc so I don't have to restart reMarkable.
+> It would like to solve the reboot problem, because it's incredibly fucked up.
+> I also don't know how I get out of the file because reMarkable 2 doesn't have `ecp` on reMarkable Paper Pro's key.
 
 Markdown Cheat Sheet
 
@@ -157,7 +160,7 @@ Use the git pull command.
 
 Code Block
 
-"X" "X" "X" "X" "X" "X" "X" "X" "X"
+"X" "X" "X" "X" "X" "X" "X" "X" "X" "X" "16" "X"
 == sync, corrected by elderman == @elder_man
 
 You can use it as internal documentation for your markdown-localization.yml project or add it directly to the repository as a helper for contributors.

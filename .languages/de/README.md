@@ -3,6 +3,9 @@ Eine modifizierte Datei auf reMarkable und zurück zum Github geschickt, wo ich 
 > Erstellt andere Sprachen
 > - noch ein Test, ich hatte den falschen Weg, um die Aktion auf github starten
 
+> Letzte Änderung, aber diesmal mache ich es auf pc, damit ich reMarkable nicht neu starten muss.
+> Das Problem mit dem Neustart sollte gelöst werden, weil das echt scheiße ist.
+> Ich weiß auch nicht, wie ich aus der Datei komme, weil reMarkable nicht `ecp` auf reMarkable Paper ist.
 
 Markdown Cheat Sheet
 
@@ -157,7 +160,7 @@ erkältet.
 
 Codeblock
 
-"X"_9.X.X.10.X.10.X.11.X.12 CodeX.13.X.X.14.
+"X"_13.X.X.14.X.15.X.16 CodeX.17.X.18.
 SubCentral TV4User präsentieren:
 
-Du kannst es als interne Dokumentation für dein markdown-localizationXovi_15 Projekt verwenden oder es direkt in das Repository als Hilfsmittel für Anbieter hinzufügen.
+Du kannst es als interne Dokumentation für dein markdown-localization.yml Projekt verwenden oder es direkt in das Repository als Hilfsmittel für Anbieter hinzufügen.

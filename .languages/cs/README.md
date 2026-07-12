@@ -1,5 +1,5 @@
-# Posledni uprava, pred tim nez si reknu DONE
-> jsem zvedavy jak se s tim Github popere
+# Poslední úprava, před tím než si řeknu DONE
+> jsem zvědavý jak se s tím Github popere
 
 Markdown Cheat Sheet
 

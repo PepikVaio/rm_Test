@@ -1,3 +1,7 @@
+Upraveny soubor na reMarkable a poslany zpet na github, kde se mi o zbytek postara Github akce.
+> doplni diakritiku
+> vytvori ostatni jazyky
+
 Markdown Cheat Sheet
 
 Praktická pomůcka pro tvorbu dokumentace v Markdownu (GitHub README, návody, poznámky).

@@ -1,7 +1,7 @@
-Upraveny soubor na reMarkable a poslany zpet na github, kde se mi o zbytek postara Github akce.
-> doplni diakritiku
-> vytvori ostatni jazyky
-> - jeste jeden test, mel jsem spatne cestu ke spusteni akce na github
+Upravený soubor na reMarkable a poslány zpět na github, kde se mi o zbytek postará Github akce.
+> doplní diakritiku
+> vytvoří ostatní jazyky
+> - ještě jeden test, měl jsem špatně cestu ke spuštění akce na github
 
 
 Markdown Cheat Sheet

@@ -1,6 +1,6 @@
 ### Upravený soubor na PC 3
 
-> upravene na reMarkable pomoci klavesnice, kde nemohu psat ceskou diakritiku, bohuzel, no, co se da delat.
+> upravené na reMarkable pomocí klávesnice, kde nemohu psát českou diakritiku, bohužel, no, co se dá dělat.
 
 # Xovi rozšíření!
 > Přizpůsobte si svůj tablet reMarkable pomocí těchto rozšíření.

@@ -1,9 +1,11 @@
-[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/PepikVaio/reMarkable_Xovi_Extensions)
-[![cs](https://img.shields.io/badge/lang-cs-springgreen.svg)](https://github.com/PepikVaio/reMarkable_Xovi_Extensions/blob/main/.language_cs/README.cs.md)
-[![supported: rM1](https://img.shields.io/badge/rM1-supported-green)](https://remarkable.com/store/remarkable)
-[![supported: rM2](https://img.shields.io/badge/rM2-supported-green)](https://remarkable.com/store/remarkable-2)
-[![supported: rmPP](https://img.shields.io/badge/rmPP-supported-blue)](https://remarkable.com/store/remarkable-paper/pro)
-[![supported: FW](https://img.shields.io/badge/fw_3.xx-supported-green)]()
+### Test psani a poslani Markdown dokumentu pres reMarkbale 2 s type folio.
+> jsem zvedavy, zda probehne akce tak, jak je naplanovana.
+> myslim, ze mam vypnute preklady, takze by mela probehnout akce doplneni ceske diakritiky do textu.
+> toto je naprosto zasadni doplnek, pro pouzivani klavesnice na remarkable.
+> kdyz pisu md soubory, nepotrebuji k tomu pocitac, to je proste parada.
+> asi si udelam jeden soubor, kde budu mit veskere poznamky, abych se k tomu mohl vracet, kopirovat a vkladat.
+
+
 
 # Xovi rozšíření!
 > Přizpůsobte si svůj tablet reMarkable pomocí těchto rozšíření.

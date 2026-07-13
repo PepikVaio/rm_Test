@@ -1,4 +1,4 @@
-### Upravený soubor na PC 2
+### Upravený soubor na PC 3
 
 
 # Xovi rozšíření!

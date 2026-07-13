@@ -1,10 +1,4 @@
-### Test psaní a poslání Markdown dokumentů přes reMarkbale 2 s type folio.
-> jsem zvědavý, zda proběhne akce tak, jak je naplánována.
-> myslím, že mám vypnuté překlady, takže by měla proběhnout akce doplnění české diakritiky do textu.
-> toto je naprosto zásadní doplněk, pro používání klávesnice na remarkable.
-> když píšu md soubory, nepotřebují k tomu počítač, to je prostě paráda.
-> asi si udělám jeden soubor, kde budu mít veškeré poznámky, abych se k tomu mohl vracet, kopírovat a vkládat.
-
+### Upravený soubor na PC
 
 
 # Xovi rozšíření!

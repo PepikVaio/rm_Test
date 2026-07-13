@@ -1,5 +1,7 @@
 ### Upravený soubor na PC 3
 # test diakritiky na klávesnici, která nepodporuje české znaky.
+> upraveno na reMarkable
+
 
 # Xovi rozšíření!
 > Přizpůsobte si svůj tablet reMarkable pomocí těchto rozšíření.

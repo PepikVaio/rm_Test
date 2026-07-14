@@ -1,4 +1,4 @@
-### Upravený soubor na PC 31
+### Upravený soubor na PC 313
 
 > upravené na reMarkable pomocí klávesnice, kde nemohu psát českou diakritiku, bohužel, no, co se dá dělat.
 

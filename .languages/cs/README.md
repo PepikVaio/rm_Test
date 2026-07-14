@@ -1,4 +1,5 @@
 ### Upravený soubor na PC 313
+> iMac
 
 > upravené na reMarkable pomocí klávesnice, kde nemohu psát českou diakritiku, bohužel, no, co se dá dělat.
 

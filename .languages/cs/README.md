@@ -2,3 +2,4 @@
 > test prekladu pomoci scriptu na Github akce.
 > bude prelozene?
 > Snad ano.
+> Nebo ne?

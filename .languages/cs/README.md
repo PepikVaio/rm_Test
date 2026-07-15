@@ -2,6 +2,7 @@
 > iMac 10
 > změna na iMac
 > změna další !!!
+> 15/7
 
 > upravené na reMarkable pomocí klávesnice, kde nemohu psát českou diakritiku, bohužel, no, co se dá dělat.
 

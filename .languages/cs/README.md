@@ -1,4 +1,4 @@
 # iMac 2020
-> test prekladu pomoci scriptu na Github akce.
-> bude prelozene?
+> test překladů pomocí scriptu na Github akce.
+> bude přeložené?
 > Snad ano.

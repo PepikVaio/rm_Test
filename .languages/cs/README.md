@@ -1,6 +1,6 @@
 # iMac 2020
-> test překladů pomocí scriptu na Github akce.
-> bude přeložené?
+> test prekladu pomoci scriptu na Github akce.
+> bude prelozene?
 > Snad ano.
 > Nebo ne?
 > Nebo?
@@ -10,3 +10,4 @@
 
 asxsax
 asxasasxsa
+axas

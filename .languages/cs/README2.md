@@ -1,8 +1,3 @@
 # Title
-> Test nové verze.
+> Test nove verze.
 > <br>
-> Dalsi test nove verze, jestli mi to doplni i diakritiku.
-> <br>
-> Po zapnuti diakritiky a translate moznosti.
-> <br>
-> Po druhem pruchodu.

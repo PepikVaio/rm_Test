@@ -1,11 +1,8 @@
-# Titles
-> Test new version.
+# Title
+> Test nove verze.
 > <br>
-> Second passage.
+> Druhy pruchod.
 > <br>
-> Last try?
+> Posledni pokus?
 > <br>
-> I am very curious if everything will be all right now.
-> After repairing some console log etc.
-> <br>
-> Will the translator and diacritics work in the Czech language?
+> Jsem velice zvedavy, jestli to nyni bude vse v poradku.

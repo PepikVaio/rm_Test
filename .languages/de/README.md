@@ -1,13 +1,8 @@
-# iMac 2020
-> Übersetzungstest mit Script auf Github Aktion.
-> wird es übersetzt?
-> Vielleicht, ja.
-> Oder nicht?
-Oder?
-> ???
-> Letzte
-> zuletzt 1154assasxsa
-
-Asxsax
-Asxasasxsa
-Axas
+# Title
+> Test der neuen Version.
+> <br>
+> Zweiter Durchgang.
+> <br>
+> Letzter Versuch?
+> <br>
+> Ich bin sehr neugierig, ob jetzt alles in Ordnung sein wird.

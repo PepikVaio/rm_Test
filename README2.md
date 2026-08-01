@@ -1,8 +1,11 @@
-# Titles
-> Test new version.
+# Title
+> Test nove verze.
 > <br>
-> Second passage.
+> Druhy pruchod.
 > <br>
-> Last try?
+> Posledni pokus?
 > <br>
-> I am very curious if everything will be all right now.
+> Jsem velice zvedavy, jestli to nyni bude vse v poradku.
+> Po oprave nejakych console log atd.
+> <br>
+> Bude fungovat prekladac a diakritika v ceskem jazyce?

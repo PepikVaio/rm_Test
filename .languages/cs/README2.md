@@ -1,11 +1,11 @@
 # Title
-> Test nove verze.
+> Test nové verze.
 > <br>
-> Druhy pruchod.
+> Druhý průchod.
 > <br>
-> Posledni pokus?
+> Poslední pokus?
 > <br>
-> Jsem velice zvedavy, jestli to nyni bude vse v poradku.
-> Po oprave nejakych console log atd.
+> Jsem velice zvědavý, jestli to nyní bude vše v pořádku.
+> Po opravě nějakých console log atd.
 > <br>
-> Bude fungovat prekladac a diakritika v ceskem jazyce?
+> Bude fungovat překladač a diakritika v českém jazyce?
